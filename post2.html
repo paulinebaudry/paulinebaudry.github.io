@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Pauline Baudry</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+<div id = 'container'>
+  <div id = 'top'>
+
+    <div id = 'header'>
+      <h1>Pauline Baudry</h1>
+      <h2>Data viz + analysis</h2>
+  </div>
+
+
+  <!--Menu buttons-->
+  <div id ="menu">
+    <div class="menuitem"><a href="./about.html">ABOUT</a></div>
+    <div class="menuitem"><a href="./blog.html">BLOG</a></div>
+    <div class="menuitem"><a href="./Pauline Baudry_CV.pdf">CV</a></div>
+  </div>
+  </div>
+
+
+
+  <div id = "middle">
+  <div id = "article">
+    <div id = 'text'>
+    <h1>How child friendly is copenhagen?</h1>
+    <h2>A tool mapping child-friendliness in the Danish capital</h2>
+    <h3>March 14, 2018</h3>
+    <p>Denmark is once again in the top countries of the World Happiness Report, taking the third position in the 2018 ranking. Ranked first in the UN World Happiness report in 2012, 2013 and 2016, Denmark is arguably one of the happiest nations in the world. The trending Danish ‘hygge’ lifestyle, based on comfort and wellness, testifies for this. A non-negligible contributor to the strength of the Danish model for happiness is that it is particularly child-oriented. </p>
+    <p>However, the Danish population has also been growing in the past years, particularly in Copenhagen, with a yearly increase of 1.32% between 2011 and 2015. Higher population density can put pressure on child-friendliness within the urban structure: for instance, a study conducted by Li and Li (2017) in China revealed that the child-friendliness of the city decreases with higher density. In addition, Copenhagen is subject to general challenges faced in creating cities tailored for children: the lack of consideration of children in the design and planning of cities is an oft-mentioned criticism, which is observed around the world, including in most developed nations. </p>
+<p>With these points in mind, it seems that creating a child-friendly environment, even for the Danes, is not as easy as may seem. As a child-friendly city should be friendly to all, public infrastructure can be a good indicator of how well the city is tailored for children as well. The following maps give us insight into the level of child-friendliness of infrastructure in Copenhagen, and it seems that, despites the challenges outlined above, it stands up to the test!</p>
+
+  <p>The following maps are developed on various datasets relating to infrastructure that I have considered relevant for children living in the city, and is mainly taken from the Copenhagen Open Data platform. As children’s activities and interests vary according to age, three age groups have been created, to which different variables have been assigned. The data is further split into four categorical groups, which encompass the main aspects influencing children’s environment. However, categories for safety and environment do not vary across age, and some variables are repeated in different age groups. The maps were made in R and made interactive and embedded below through a Shiny App.</p>
+
+  <p>Go ahead and click on the different categories to explore just how child-friendly Copenhagen is!</p>
+</div>
+<!--<div id = 'photo_cph'>
+  <a href = "https://www.visitcopenhagen.com/copenhagen/city-areas">
+     <img src = "/Users/paulinebaudry/Desktop/Website/Pauline/css/img/cph_children.jpg" alt "Mum and children biking" />
+   </a>
+ </div>-->
+
+  <div id ='shiny_map'>
+  <iframe seamless src="https://paulinebaudry.shinyapps.io/child_friendliness_tool/" width='100%' height="600"></iframe>
+</div>
+  </div>
+</div>
+
+
+</body>
+
+</html>
