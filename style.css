@@ -9,25 +9,30 @@ body{
 }
 
 #container{
-  width:100%;
+  width:90%;
+padding-right: 50px;
+padding-left: 50px;
 }
 
 
 #top{
   position:relative;
+  width:100%;
+  padding: 50px;
 }
 
 #header{
+    position:relative;
   text-align: left;
-  margin-left: 50px;
-  padding-top: 50px;
+  width:50%;
+  float:left;
 }
 
 #header h1{
 /*  letter-spacing: 8px;*/
   font-size: 30px;
   font-weight: bold;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 #header h2{
@@ -35,11 +40,22 @@ body{
   color:#FF6347;
 }
 
+#header a{
+  color: black;
+}
+
+#top a{
+  text-decoration: none;
+}
+
 
 #menu{
+  position:relative;
+  width:40%;
+  float:right;
+  margin-top:30px;
   bottom:0;
   text-align: right;
-
 }
 
 .menuitem{
@@ -48,7 +64,6 @@ body{
 	width:33%;
   display: inline;
   padding: 50px;
-  color:#FF6347;
 }
 
 a{
@@ -59,12 +74,25 @@ a{
   color:black;
 }
 
+.clicked{
+  text-align: right;
+	font-size: 20px;
+	width:33%;
+  display: inline;
+  padding: 50px;
+  text-decoration: underline;
+  text-decoration-color:#FF6347;
+}
+
+.clicked a{
+  color:#FF6347;
+}
+
 
 #middle{
-  margin: 0 auto;
-  width:90%;
-  height:100%;
-  padding-top:50px;
+  width: 80%;
+
+  padding:50px;
 }
 
 
@@ -77,17 +105,32 @@ a{
 /*Description*/
 
 #bio-container{
-  width:100%;
+  width:30%;
 }
 
 #bio{
   position: relative;
   text-align: left;
-  width:30%;
+  width:100%;
   padding:10px;
   float:left;
   background-color: white;
   font-size: 14px;
+}
+
+/*Photo*/
+
+#photo{
+  position: relative;
+  width:100%;
+  float:left;
+  display: none;
+  z-index: 10;
+}
+
+#photo img{
+  max-height: 400px;
+  max-width: 100%;
 }
 
 #arrow{
@@ -103,43 +146,29 @@ a{
   width:80px;
 }
 
-#middle-container{
-  float:left;
-  width: 100%;
-  top: 100px;
-  position: relative;
-}
 
 /*Contact links*/
 #link-container{
-  width:60%;
-  float:left;
+  margin-bottom:100px;
+  position: relative;
+  width:20%;
+  float:center;
   text-align: center;
-  margin-top: 150px;
-}
-
-#link-title{
-  width:40%;
-  float:left;
-  display: none;
-  letter-spacing: 3px;
-  word-spacing: 3px;
+  margin-left: 40%;
 }
 
 #links{
   position: relative;
-  float:left;
-  width:30%;
+  float:center;
+
   display: none;
   z-index: 100;
-  margin-top: -10px;
 }
 
 .link-icon img{
-  width:40px;
+  width:30px;
   padding:10px;
   display: inline-block;
-
 }
 
 .link-icon{
@@ -147,30 +176,19 @@ a{
   display: inline;
   padding: 10px;
   float: left;
+  opacity:0.6;
 }
 
-
-/*Photo*/
-
-
-#photo{
-  width:30%;
-  float:left;
-  display: none;
-  z-index: 10;
+.link-icon:hover{
+  opacity:1;
 }
 
-#photo img{
-  max-height: 400px;
-  max-width: 100%;
-
-}
 
 /*Map*/
 #map-container{
-  width:100%;
+  width:90%;
   position: absolute;
-  right:0;
+
   z-index: 0;
 }
 
@@ -416,7 +434,7 @@ input[type=text]:focus {
   margin-top: 50px;
   bottom:0;
   text-align: right;
-  padding-bottom: 50px;
+
 }
 
 .menuitem-cv{
@@ -430,6 +448,20 @@ input[type=text]:focus {
 .menuitem-cv a{
   text-decoration: none;
   color:black;
+}
+
+.clicked-cv{
+  text-align: right;
+	font-size: 20px;
+	width:33%;
+  display: inline;
+  padding: 100px;
+  text-decoration: underline;
+  text-decoration-color: #FF6347;
+}
+
+.clicked-cv a{
+  color:#FF6347;
 }
 
 

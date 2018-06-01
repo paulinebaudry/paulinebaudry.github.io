@@ -20,9 +20,9 @@ $('#arrow').on('click', function(event){
       scrollTop: 50},
       1000);
     $("#top-container").delay(500).fadeIn(500);
-    $("#arrow").delay(3500).slideDown(500);
-    $("#link-title").delay(4000).fadeIn(500);
-    $("#photo").delay(4000).fadeIn(500);
+    $("#photo").delay(1000).fadeIn(500);
+    //$("#arrow").delay(3500).slideDown(500);
+    //$("#link-title").delay(4000).fadeIn(500);
     $("#links").delay(4000).fadeIn(500);
 
 
