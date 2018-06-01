@@ -208,6 +208,12 @@ z-index: 0;
   width:100%;
 }
 
+#temp-text{
+  float: center;
+  margin: 100px;
+  margin-left: 500px;
+}
+
 #subheader{
   float: left;
   display: block;
