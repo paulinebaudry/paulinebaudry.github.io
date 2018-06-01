@@ -4,12 +4,26 @@
   });
   */
 
+
+$('#arrow').on('click', function(event){
+  $('html, body').animate({
+    scrollTop: $('#arrow').offset().top
+  },500);
+});
+
+
 //Fade in effect of elements appearing
   $(document).ready(function() {
     //ABOUT page
+
+    $('html, body').animate({
+      scrollTop: 50},
+      1000);
     $("#top-container").delay(500).fadeIn(500);
-    $("#photo").delay(1000).fadeIn(500);
-    $("#links").delay(1500).fadeIn(500);
+    $("#arrow").delay(3500).slideDown(500);
+    $("#link-title").delay(4000).fadeIn(500);
+    $("#photo").delay(4000).fadeIn(500);
+    $("#links").delay(4000).fadeIn(500);
 
 
     //BLOG page
@@ -55,9 +69,9 @@ var fbo = {text:'<b>Falsterbo</b> </br> The motherland', lnglat: [12.85,55.4]}
 };
 
 citypopup(fbo,'bottom',1500);
-citypopup(nyc,'bottom',2500);
-citypopup(paris,'top',3500);
-citypopup(london,'left',4500);
+citypopup(nyc,'bottom',2000);
+citypopup(paris,'top',2500);
+citypopup(london,'right',3000);
 
 
 

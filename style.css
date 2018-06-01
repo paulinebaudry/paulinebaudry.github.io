@@ -15,8 +15,6 @@ body{
 
 #top{
   position:relative;
-  /*background-color: #FFE600#ff6347 ;*/
-
 }
 
 #header{
@@ -34,15 +32,14 @@ body{
 
 #header h2{
   font-size: 20px;
+  color:#FF6347;
 }
-
-
 
 
 #menu{
   bottom:0;
   text-align: right;
-  padding-bottom: 50px;
+
 }
 
 .menuitem{
@@ -50,7 +47,8 @@ body{
 	font-size: 20px;
 	width:33%;
   display: inline;
-  padding: 100px;
+  padding: 50px;
+  color:#FF6347;
 }
 
 a{
@@ -92,65 +90,78 @@ a{
   font-size: 14px;
 }
 
+#arrow{
+  position: relative;
+  margin-top: 450px;
+  margin-left: 48%;
+  z-index: 100;
+  cursor: pointer;
+  display: none;
+}
+
+#arrow img{
+  width:80px;
+}
+
 #middle-container{
   float:left;
   width: 100%;
+  top: 100px;
+  position: relative;
 }
 
 /*Contact links*/
+#link-container{
+  width:60%;
+  float:left;
+  text-align: center;
+  margin-top: 150px;
+}
+
+#link-title{
+  width:40%;
+  float:left;
+  display: none;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
 #links{
-  top: 400px;
   position: relative;
   float:left;
-  width:50%;
-  padding:10px;
-  text-align: left;
-  font-size: 20px;
+  width:30%;
   display: none;
-  margin-left: 100px;
+  z-index: 100;
+  margin-top: -10px;
 }
 
 .link-icon img{
   width:40px;
   padding:10px;
   display: inline-block;
+
 }
 
 .link-icon{
-  width:15%;
-  float:left;
-  margin-left:10px;
+  width:20%;
+  display: inline;
+  padding: 10px;
+  float: left;
 }
 
-#email-icon{
-  background-color: #FF6347;
-  border-radius: 50%;
-  width:40px;
-  height:40px;
-  margin-top: 10px;
-  margin-right: 30px;
-  float:right;
-}
-
-#email-icon img{
-  margin-top:-4px;
-  margin-left: -5px;
-  width:30px;
-}
 
 /*Photo*/
+
+
 #photo{
-  top: 400px;
-  position: relative;
-  float: right;
   width:30%;
+  float:left;
   display: none;
+  z-index: 10;
 }
 
 #photo img{
-  margin-left: 20px;
-  margin-bottom: 20px;
-  max-height: 350px;
+  max-height: 400px;
   max-width: 100%;
 
 }
@@ -160,12 +171,12 @@ a{
   width:100%;
   position: absolute;
   right:0;
-
+  z-index: 0;
 }
 
 #map {
   height:600px;
-
+z-index: 0;
 }
 
 
@@ -183,28 +194,11 @@ a{
   cursor: pointer;
 }
 
-#popup1{
-  display:none;
-}
-
-#parallax{
-  position:relative;
-  background-image: url("/Users/paulinebaudry/Desktop/Website/Pauline/css/img/ldn.jpg");
-  min-height: 400px;
-  width:100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 /*Map area*/
 #middle-bottom{
   position:relative;
   width:100%;
-
 }
-
 
 
 /*BLOG*/
@@ -231,6 +225,7 @@ a{
   padding:20px;
   margin-left: 20px;
   right:0;
+  cursor: pointer;
 }
 
 .box{
@@ -288,8 +283,32 @@ input[type=text]:focus {
   color:white;
 }
 
+.category a{
+  text-decoration: none;
+  color: white;
+}
 
-.latest{
+.pressed{
+  padding: 10px 24px;
+  text-align: right;
+	float:center;
+	width:20%;
+  display: inline;
+  margin-top: 20px;
+  padding:10px;
+  border-style: solid;
+  background-color: white;
+  color:#FF6347;
+}
+
+.pressed a{
+
+  text-decoration: none;
+  color:#FF6347;
+}
+
+
+.archive{
   float:right;
   width: 30%;
   border: solid 2px;
@@ -297,11 +316,11 @@ input[type=text]:focus {
   padding: 10px;
 }
 
-.latest a{
+.archive a{
   color:black;
 }
 
-.latest_card{
+.latest{
   float:left;
   text-align: center;
   color: black;
@@ -321,6 +340,18 @@ input[type=text]:focus {
   background-color: grey;
 }
 
+.map_card{
+  position: relative;
+  margin-left:10%;
+  margin-top: 20px;
+  width:70%;
+}
+
+.blog a{
+  text-decoration: none;
+  color:black;
+}
+
 .title{
   position: absolute;
   background-color: white;
@@ -328,12 +359,15 @@ input[type=text]:focus {
   padding: 10px;
 }
 
-.latest_card:hover{
+.latest:hover{
   opacity:0.6;
 }
 
-
 .card:hover{
+  opacity:0.6;
+}
+
+.map_card:hover{
   opacity:0.6;
 }
 
@@ -360,7 +394,15 @@ input[type=text]:focus {
   float:center;
   text-align: justify;
   width:50%;
+  margin-left:25%;
 }
+
+#text a{
+  color:#FF6347;
+  text-decoration: none;
+}
+
+
 
 /*CV*/
 
