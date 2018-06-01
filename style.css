@@ -9,8 +9,8 @@ body{
 }
 
 #container{
-  width:90%;
-padding-right: 50px;
+width:90%;
+padding-right: 100px;
 padding-left: 50px;
 }
 
@@ -90,9 +90,9 @@ a{
 
 
 #middle{
-  width: 80%;
-
+  width: 90%;
   padding:50px;
+
 }
 
 
@@ -105,7 +105,7 @@ a{
 /*Description*/
 
 #bio-container{
-  width:30%;
+  width:40%;
 }
 
 #bio{
@@ -154,7 +154,7 @@ a{
   width:20%;
   float:center;
   text-align: center;
-  margin-left: 40%;
+  margin-left: 50%;
 }
 
 #links{
@@ -293,6 +293,7 @@ input[type=text]:focus {
   width: 100%;
   float:left;
   display:none;
+  padding-bottom: 100px;
 }
 
 .category{
@@ -429,44 +430,14 @@ input[type=text]:focus {
 
 
 /*CV*/
-
-#menu-cv{
-  margin-top: 50px;
-  bottom:0;
-  text-align: right;
-
+#download{
+  width: 100%;
 }
-
-.menuitem-cv{
-  text-align: right;
-	font-size: 20px;
-	width:33%;
-  display: inline;
-  padding: 100px;
-}
-
-.menuitem-cv a{
-  text-decoration: none;
-  color:black;
-}
-
-.clicked-cv{
-  text-align: right;
-	font-size: 20px;
-	width:33%;
-  display: inline;
-  padding: 100px;
-  text-decoration: underline;
-  text-decoration-color: #FF6347;
-}
-
-.clicked-cv a{
-  color:#FF6347;
-}
-
 
 #download-button{
-  float:left;
+  width:100px;
+  margin-left:44%;
+  float:center;
   background-color: #FF6347;
   padding:10px;
   border: 5px;
@@ -527,7 +498,7 @@ input[type=text]:focus {
 
 .content{
   width: 85%;
-  float:left
+  float:left;
 }
 
 .date{
