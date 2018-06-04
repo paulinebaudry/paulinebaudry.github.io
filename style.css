@@ -9,7 +9,7 @@ body{
 }
 
 #container{
-width:90%;
+width:100%;
 /*
 padding-right: 100px;
 padding-left: 50px;*/
@@ -18,7 +18,8 @@ padding-left: 50px;*/
 
 #top{
   position:relative;
-  width:100%;
+  width:80%;
+  margin: 0 auto;
   padding: 5%;
 }
 
@@ -87,7 +88,8 @@ a{
 
 
 #middle{
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   padding:50px;
 
 }
@@ -153,7 +155,7 @@ a{
 }
 
 #links{
-  width: 10%;
+  width: 20%;
   min-width: 200px;
   margin: 0 auto;
 }
@@ -181,7 +183,7 @@ a{
 
 /*Map*/
 #map-container{
-  width:90%;
+  width:80%;
   position: absolute;
   z-index: -100;
 }
@@ -216,8 +218,10 @@ a{
 /*BLOG*/
 
 .blog{
-  float:center;
-  width:100%;
+  float:left;
+  min-width: 400px;
+  border-style: solid;
+  border-width: thin;
 }
 
 #temp-text{
@@ -234,15 +238,16 @@ a{
 
 #description{
   width:50%;
+  min-width: 400px;
   float:left;
 }
 
 #categories{
-  width: 20%;
-  float:left;
+  width: 40%;
+  min-width: 300px;
+  float:right;
+  text-align: right;
   padding:20px;
-  margin-left: 20px;
-  right:0;
   cursor: pointer;
 }
 
@@ -344,9 +349,12 @@ input[type=text]:focus {
   text-align: center;
   color: black;
   width: 60%;
+  height: 400px;
   margin:auto;
   margin-top: 20px;
 }
+
+
 
 .card{
   float:left;
@@ -372,10 +380,10 @@ input[type=text]:focus {
 }
 
 .title{
-  position: absolute;
+  position: relative;
   background-color: white;
-  margin-top: 20px;
-  padding: 10px;
+
+  min-width:300px;
 }
 
 .latest:hover{
@@ -393,6 +401,7 @@ input[type=text]:focus {
 .card .image{
   margin:auto;
 }
+
 
 .image img{
   width:100%;
@@ -447,9 +456,8 @@ input[type=text]:focus {
 }
 
 #cv{
-  padding-left:180px;
-  padding-right: 180px;
-  padding-top:50px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .cv_section{
