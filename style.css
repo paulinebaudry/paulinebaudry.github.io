@@ -10,22 +10,24 @@ body{
 
 #container{
 width:90%;
+/*
 padding-right: 100px;
-padding-left: 50px;
+padding-left: 50px;*/
 }
 
 
 #top{
   position:relative;
   width:100%;
-  padding: 50px;
+  padding: 5%;
 }
 
 #header{
-    position:relative;
+  position:relative;
   text-align: left;
   width:50%;
   float:left;
+  z-index: 100;
 }
 
 #header h1{
@@ -33,11 +35,6 @@ padding-left: 50px;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 3px;
-}
-
-#header h2{
-  font-size: 20px;
-  color:#FF6347;
 }
 
 #header a{
@@ -53,7 +50,7 @@ padding-left: 50px;
   position:relative;
   width:40%;
   float:right;
-  margin-top:30px;
+  margin-top:3%;
   bottom:0;
   text-align: right;
 }
@@ -90,7 +87,7 @@ a{
 
 
 #middle{
-  width: 90%;
+  width: 100%;
   padding:50px;
 
 }
@@ -99,24 +96,24 @@ a{
 #top-container{
   width:100%;
   display: none;
+  float:left;
 }
 
 
 /*Description*/
 
-#bio-container{
-  width:40%;
-}
 
 #bio{
   position: relative;
   text-align: left;
-  width:100%;
-  padding:10px;
   float:left;
   background-color: white;
   font-size: 14px;
+  min-width: 350px;
+  max-width: 400px;
 }
+
+
 
 /*Photo*/
 
@@ -150,20 +147,17 @@ a{
 /*Contact links*/
 #link-container{
   margin-bottom:100px;
-  position: relative;
-  width:20%;
-  float:center;
-  text-align: center;
-  margin-left: 50%;
+  width:100%;
+  float:left;
+  display: none;
 }
 
 #links{
-  position: relative;
-  float:center;
-
-  display: none;
-  z-index: 100;
+  width: 10%;
+  min-width: 200px;
+  margin: 0 auto;
 }
+
 
 .link-icon img{
   width:30px;
@@ -172,10 +166,11 @@ a{
 }
 
 .link-icon{
-  width:20%;
+  position: relative;
+  width:10%;
   display: inline;
   padding: 10px;
-  float: left;
+  float: center;
   opacity:0.6;
 }
 
@@ -188,13 +183,12 @@ a{
 #map-container{
   width:90%;
   position: absolute;
-
-  z-index: 0;
+  z-index: -100;
 }
 
 #map {
   height:600px;
-z-index: 0;
+
 }
 
 

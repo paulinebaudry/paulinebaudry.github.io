@@ -23,7 +23,7 @@ $('#arrow').on('click', function(event){
     $("#photo").delay(1000).fadeIn(500);
     //$("#arrow").delay(3500).slideDown(500);
     //$("#link-title").delay(4000).fadeIn(500);
-    $("#links").delay(4000).fadeIn(500);
+    $("#link-container").delay(4000).fadeIn(500);
 
 
     //BLOG page
@@ -52,7 +52,7 @@ var fbo = {text:'<b>Falsterbo</b> </br> The motherland', lnglat: [12.85,55.4]}
 });
 
 
-
+map.scrollZoom.disable();
 
  function citypopup (city,direction,delay){
 
