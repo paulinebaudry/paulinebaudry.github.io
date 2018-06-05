@@ -10,7 +10,8 @@ body{
 
 #container{
 width:100%;
-padding:10px;
+margin: 0 auto;
+
 /*
 padding-right: 100px;
 padding-left: 50px;*/
@@ -19,7 +20,7 @@ padding-left: 50px;*/
 
 #top{
   position:relative;
-  width:80%;
+  width:85%;
   margin: 0 auto;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -89,7 +90,7 @@ a{
 
 
 #middle{
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding:50px;
 
@@ -184,7 +185,7 @@ a{
 
 /*Map*/
 #map-container{
-  width:80%;
+  width:85%;
   position: absolute;
   z-index: -100;
 }
@@ -248,7 +249,7 @@ a{
   min-width: 300px;
   float:right;
   text-align: right;
-  padding:20px;
+  padding-top:20px;
   cursor: pointer;
 }
 
@@ -335,6 +336,7 @@ input[type=text]:focus {
 .archive{
   float:right;
   width: 30%;
+  min-width: 300px;
   border: solid 2px;
   margin-top: 20px;
   padding: 10px;
@@ -426,7 +428,8 @@ a.link:hover{
   float:center;
   text-align: justify;
   width:50%;
-  margin-left:25%;
+  min-width: 500px;
+  margin: 0 auto;
 }
 
 #text a{
@@ -467,7 +470,7 @@ a.link:hover{
 
 #cv{
   position:relative;
-  width: 80%;
+  width: 85%;
   min-width: 400px;
   margin: 0 auto;
 }
