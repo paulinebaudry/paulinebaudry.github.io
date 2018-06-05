@@ -49,7 +49,7 @@ padding-left: 50px;*/
 
 #menu{
   position:relative;
-  width:40%;
+  width:50%;
   float:right;
   margin-top:3%;
   bottom:0;
@@ -326,7 +326,6 @@ input[type=text]:focus {
 }
 
 .pressed a{
-
   text-decoration: none;
   color:#FF6347;
 }
@@ -344,16 +343,18 @@ input[type=text]:focus {
   color:black;
 }
 
+a.link:hover{
+  color: #FF6347;
+}
+
 .latest{
   float:left;
   text-align: center;
   color: black;
   width: 60%;
-  height: 400px;
   margin:auto;
   margin-top: 20px;
 }
-
 
 
 .card{
@@ -383,7 +384,9 @@ input[type=text]:focus {
   position: relative;
   background-color: white;
 
+  float:center;
   min-width:300px;
+  padding: 10px;
 }
 
 .latest:hover{
@@ -402,20 +405,20 @@ input[type=text]:focus {
   margin:auto;
 }
 
+.blog .image{
+  width:100%;
+  float:left;
+  position: relative;
+  overflow: hidden;
+}
 
 .image img{
   width:100%;
-  height:auto;
 }
 
 #article{
   float: center;
   width:100%;
-}
-
-#photo_cph{
-  width:50%;
-  float:right;
 }
 
 #text{
@@ -434,12 +437,15 @@ input[type=text]:focus {
 
 /*CV*/
 #download{
+  position: relative;
   width: 100%;
 }
 
 #download-button{
+  position: relative;
   width:100px;
-  margin-left:44%;
+  max-height: 20px;
+  margin: 0 auto;
   float:center;
   background-color: #FF6347;
   padding:10px;
@@ -452,16 +458,20 @@ input[type=text]:focus {
 }
 
 #cv_header{
+  width: 100%;
   text-align: center;
 }
 
 #cv{
+  position:relative;
   width: 80%;
+  min-width: 400px;
   margin: 0 auto;
 }
 
 .cv_section{
   width:100;
+
 }
 
 .cv_section a{
@@ -501,10 +511,12 @@ input[type=text]:focus {
 .content{
   width: 85%;
   float:left;
+
 }
 
 .date{
   width:10%;
   float:right;
   text-align: right;
+
 }
