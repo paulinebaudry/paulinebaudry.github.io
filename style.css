@@ -9,7 +9,7 @@ body{
 }
 
 #container{
-width:100%;
+width:85%;
 margin: 0 auto;
 
 /*
@@ -20,7 +20,7 @@ padding-left: 50px;*/
 
 #top{
   position:relative;
-  width:85%;
+  width:100%;
   margin: 0 auto;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -90,9 +90,8 @@ a{
 
 
 #middle{
-  width: 85%;
-  margin: 0 auto;
-  padding:50px;
+  width: 100%;
+  padding-top: 50px;
 
 }
 
@@ -470,7 +469,7 @@ a.link:hover{
 
 #cv{
   position:relative;
-  width: 85%;
+  width: 100%;
   min-width: 400px;
   margin: 0 auto;
 }
