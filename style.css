@@ -239,7 +239,7 @@ a{
 
 #description{
   width:50%;
-  min-width: 400px;
+  min-width: 200px;
   float:left;
 }
 
@@ -385,9 +385,8 @@ a.link:hover{
 .title{
   position: relative;
   background-color: white;
-
   float:center;
-  min-width:300px;
+  min-width:200px;
   padding: 10px;
 }
 
