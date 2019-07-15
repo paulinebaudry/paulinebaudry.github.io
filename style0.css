@@ -9,7 +9,7 @@ body{
 }
 
 #container{
-width:80%;
+width:85%;
 margin: 0 auto;
 
 /*
@@ -21,6 +21,7 @@ padding-left: 50px;*/
 #top{
   position:relative;
   width:100%;
+  margin: 0 auto;
   padding-top: 5%;
   padding-bottom: 5%;
 }
@@ -46,31 +47,12 @@ padding-left: 50px;*/
 
 #top a{
   text-decoration: none;
-  color: black;
-}
-
-.top-container {
-  float:left;
-  width: 40%;
-  padding: 10px;
-  padding-top: 50px;
-}
-
-.top-container a{
-  text-decoration: none;
-  color: black;
-}
-
-.top:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 
 #menu{
   position:relative;
-
+  width:50%;
   float:right;
   margin-top:5%;
   text-align: right;
@@ -110,16 +92,12 @@ a{
 #middle{
   width: 100%;
   padding-top: 50px;
+
 }
 
-.middle:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 #top-container{
-  width:20%;
+  width:100%;
   display: none;
   float:left;
 }
@@ -129,21 +107,25 @@ a{
 
 
 #bio{
+  position: relative;
   text-align: left;
   float:left;
+  background-color: white;
   font-size: 14px;
-  min-width: 250px;
-  max-width: 500px;
-  width:100%;
-  padding-right: 10%;
+  min-width: 350px;
+  max-width: 400px;
 }
+
 
 
 /*Photo*/
 
 #photo{
-  float:right;
-
+  position: relative;
+  width:100%;
+  float:left;
+  display: none;
+  z-index: 10;
 }
 
 #photo img{
@@ -164,56 +146,6 @@ a{
   width:80px;
 }
 
-/*Map*/
-#map-container{
-  width:80%;
-  float:left;
-/*position: absolute;
-  z-index: -100;*/
-}
-
-#map{
-  padding-top: 5%;
-  width:100%;
-  height:600px;
-}
-
-
-.mapboxgl-popup {
-  max-width: 400px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-  border: 5px;
-}
-
-#marker{
-  width: 30px;
-  height: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-/*Map area*/
-#middle-bottom{
-  position:relative;
-  width:100%;
-}
-
-.middle-container {
-  float: left;
-  width: 45%;
-  padding: 10px;
-}
-
-/*Responsive layout*/
-@media screen and (max-width: 800px) {
-  .middle-container {
-    width: 100%;
-  }
-  #photo {
-    float: left;
-  }
-}
 
 /*Contact links*/
 #link-container{
@@ -249,6 +181,39 @@ a{
   opacity:1;
 }
 
+
+/*Map*/
+#map-container{
+  width:85%;
+  position: absolute;
+  z-index: -100;
+}
+
+#map {
+  height:600px;
+
+}
+
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  border: 5px;
+}
+
+#marker{
+  width: 30px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*Map area*/
+#middle-bottom{
+  position:relative;
+  width:100%;
+}
 
 
 /*BLOG*/
@@ -388,10 +353,7 @@ a.link:hover{
   float:left;
   text-align: center;
   color: black;
-  background-image: url("./img/cph1.png");
-  background-size : 100%;
-  width: 50%;
-  height : 500px;
+  width: 60%;
   margin:auto;
   margin-top: 20px;
 }
@@ -422,12 +384,11 @@ a.link:hover{
 
 .title{
   position: relative;
+  background-color: white;
   float:center;
-  width :100%;
-  height : 50%;
-  text-align: center;
+  min-width:200px;
+  padding: 10px;
 }
-
 
 .latest:hover{
   opacity:0.6;

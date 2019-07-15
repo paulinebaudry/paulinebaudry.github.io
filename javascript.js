@@ -35,19 +35,18 @@ $('#arrow').on('click', function(event){
 
 
   //Mapbox
- mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGluZWJhdWRyeSIsImEiOiJjaXYyaHY3aDkwMDBpMnRwbDJjdzYyN3V6In0.TZTM6a3u0YfAQghLEtlnzw';
-
+mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGluZWJhdWRyeSIsImEiOiJjaXYyaHY3aDkwMDBpMnRwbDJjdzYyN3V6In0.TZTM6a3u0YfAQghLEtlnzw';
 
 var nyc = {text:'<b>New York</b> </br> 1996', lnglat:  [-73.935242,40.730610]}
-var paris = {text:'<b>Paris</b> </br> 1996-2014', lnglat: [2.349014,48.864716]}
-var london = {text:'<b>London</b> </br> 2014-Present', lnglat: [-0.118092,51.509865]}
+var paris = {text:'<b>Paris</b> </br> 1996-2014 </br> 2018-Present', lnglat: [2.349014,48.864716]}
+var london = {text:'<b>London</b> </br> 2014-2018', lnglat: [-0.118092,51.509865]}
 var fbo = {text:'<b>Falsterbo</b> </br> The motherland', lnglat: [12.85,55.4]}
 
 
  var map = new mapboxgl.Map({
    container: 'map', // container id
   style:'mapbox://styles/paulinebaudry/cjeof2tpbx22q2rt52vmwtu65', // stylesheet location
-  center: [-88.021094, 16.732281],
+  center: [-40, 30],
   zoom: 1
 });
 
@@ -70,8 +69,8 @@ map.scrollZoom.disable();
 
 citypopup(fbo,'bottom',1500);
 citypopup(nyc,'bottom',2000);
-citypopup(paris,'top',2500);
-citypopup(london,'right',3000);
+citypopup(london,'right',2500);
+citypopup(paris,'top',3000);
 
 
 
