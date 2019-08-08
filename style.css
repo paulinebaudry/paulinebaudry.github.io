@@ -291,7 +291,7 @@ a{
   opacity: 0.5;
 }
 
-Responsive layout
+/*Responsive layout*/
 @media screen and (max-width: 600px) {
   .blog-card {
     width: 100%;
