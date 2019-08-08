@@ -253,6 +253,53 @@ a{
 
 /*BLOG*/
 
+#blog-middle{
+  width: 100%;
+}
+
+.blog-card{
+  width: 300px;
+  height: 300px;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+
+.blog-card a{
+  text-decoration: none;
+  color: black;
+}
+
+.blog-photo {
+  width: 100%;
+}
+
+.img_description{
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  top: 100px;
+  left: 22%;
+}
+
+.blog-card:hover .img_description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.blog-card:hover .blog-photo {
+  opacity: 0.5;
+}
+
+/*Responsive layout*/
+@media screen and (max-width: 600px) {
+  .blog-card {
+    width: 100%;
+  }
+
+}
+
+
 .blog{
   float:left;
   min-width: 400px;

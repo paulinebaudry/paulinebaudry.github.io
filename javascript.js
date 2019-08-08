@@ -12,6 +12,7 @@ $('#arrow').on('click', function(event){
 });
 
 
+
 //Fade in effect of elements appearing
   $(document).ready(function() {
     //ABOUT page
@@ -29,6 +30,7 @@ $('#arrow').on('click', function(event){
     //BLOG page
     $('#description').delay(500).fadeIn(500);
     $('#main').delay(1000).fadeIn(500);
+
 
 
 
@@ -53,13 +55,13 @@ var fbo = {text:'<b>Falsterbo</b> </br> The motherland', lnglat: [12.85,55.4]}
 
 map.scrollZoom.disable();
 
- function citypopup (city,direction,delay){
+ function citypopup (city,direction,delay,offset){
 
   setTimeout(function(){
     popuptext = city['text'];
     LngLat = city['lnglat'];
     console.log(popuptext +":"+LngLat);
-     new mapboxgl.Popup({anchor:direction, offset: 20})
+     new mapboxgl.Popup({anchor:direction, offset: offset})
         .setHTML(popuptext)
         .setLngLat(LngLat)
         .addTo(map)
@@ -67,10 +69,17 @@ map.scrollZoom.disable();
 
 };
 
-citypopup(fbo,'bottom',1500);
-citypopup(nyc,'bottom',2000);
-citypopup(london,'right',2500);
-citypopup(paris,'top',3000);
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    $(window).off("scroll");
+    citypopup(fbo,'bottom',500,-20);
+    citypopup(nyc,'bottom',1500,-30);
+    citypopup(london,'right',2500,20);
+    citypopup(paris,'top',3500,60);
+  }
+});
+
+
 
 
 
