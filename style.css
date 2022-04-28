@@ -4,12 +4,13 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   margin-bottom: 100px;
+  background-color: #EDECED;
 
 /*font-family: 'Trebuchet MS', sans-serif;*/
 }
 
 #container{
-width:80%;
+width:90%;
 margin: 0 auto;
 
 /*
@@ -59,6 +60,10 @@ padding-left: 50px;*/
 .top-container a{
   text-decoration: none;
   color: black;
+}
+
+.top-container h1 {
+  font-size: 50px;
 }
 
 .top:after {
@@ -131,9 +136,9 @@ a{
 #bio{
   text-align: left;
   float:left;
-  font-size: 14px;
+  font-size: 16px;
   min-width: 250px;
-  max-width: 500px;
+/*  max-width: 500px;*/
   width:100%;
   padding-right: 10%;
 }
@@ -147,7 +152,7 @@ a{
 }
 
 #photo img{
-  max-height: 400px;
+ max-height: 500px;
   max-width: 100%;
 }
 
@@ -202,7 +207,7 @@ a{
 .middle-container {
   float: left;
   width: 45%;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 /*Responsive layout*/
@@ -211,7 +216,7 @@ a{
     width: 100%;
   }
   #photo {
-    float: left;
+    float: right;
   }
 }
 
