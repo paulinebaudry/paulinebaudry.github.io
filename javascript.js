@@ -24,7 +24,7 @@ $('#arrow').on('click', function(event){
     $("#photo").delay(1000).fadeIn(500);
     //$("#arrow").delay(3500).slideDown(500);
     //$("#link-title").delay(4000).fadeIn(500);
-    $("#link-container").delay(4000).fadeIn(500);
+    $("#link-container").delay(1000).fadeIn(500);
 
 
     //BLOG page
