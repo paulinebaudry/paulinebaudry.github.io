@@ -35,7 +35,7 @@ $('#arrow').on('click', function(event){
 
 
 
-
+/*
   //Mapbox
 mapboxgl.accessToken = 'pk.eyJ1IjoicGF1bGluZWJhdWRyeSIsImEiOiJjaXYyaHY3aDkwMDBpMnRwbDJjdzYyN3V6In0.TZTM6a3u0YfAQghLEtlnzw';
 
@@ -87,3 +87,4 @@ $(window).scroll(function () {
 
 map.scrollZoom.disable();
 });
+*/
