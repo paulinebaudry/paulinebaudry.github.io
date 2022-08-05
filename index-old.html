@@ -5,30 +5,39 @@
     <title>Pauline Baudry</title>
     <link rel="stylesheet" href="./style.css">
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
-
-
 </head>
 
 <body>
+<div id = 'container'>
+  <div class = 'top'>
 
-
-  <div id = 'top'>
-  <!--Title of website-->
-    <div id = 'title'>
+    <div class = 'top-container'>
       <a href = "./index.html">
       <h1>Pauline Baudry</h1>
        </a>
    </div>
 
-  <!--Menu buttons-->
-    <div id = 'menu'>
-		<a href="./blog.html">BLOG & DATA VISUALISATIONS</a>
-    </div>
 
+
+  <!--Menu buttons-->
+  <div class ="top-container">
+    <div id = 'menu'>
+		<div class="menuitem"><a href="./blog.html">BLOG & DATA VISUALISATIONS</a></div>
+		<!-- <div class="menuitem"><a href="./cv.html">CV</a></div>-->
+    </div>
 	</div>
 
-<div id = "middle">
+
+  </div>
+
+<div class = "middle">
+
+  <div class = 'middle-container'>
+
     <!--Short biography-->
     <div id = 'bio'>
       <h1>Hey there!</h1>
@@ -38,18 +47,23 @@
       <p>I am passionate about all initiatives making cities more efficient, resilient and enjoyable. </p>
       <br>
     </div>
-
+  </div>
   <!--Photo-->
+  <div class = 'middle-container'>
     <div id = 'photo'>
       <img src = "./img/photo-NUMA.jpg"  alt "Pauline portrait" />
     </div>
-
+  </div>
 
 </div>
 
 <!--  <div id = 'map'></div> -->
+</div>
 
-<div id = 'bottom'>
+
+  <div id = 'link-container'>
+  <div id = 'links'>
+    <br>
       <div class = 'link-icon'>
       <a href="https://www.linkedin.com/in/pauline-baudry/" target = "_blank">
         <img src = "./img/linkedin.png"  alt "Linkedin logo" />
@@ -69,6 +83,8 @@
     </div>
 </div>
 
+    </div>
+
 
 
 
@@ -80,7 +96,7 @@
 
 
 
+
+</div>
 </body>
-
-
 </html>

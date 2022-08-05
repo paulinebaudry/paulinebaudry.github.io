@@ -12,23 +12,29 @@
 </head>
 
 <body>
+<div id = 'container'>
+  <div class = 'top'>
 
-  <div id = 'top'>
-  <!--Title of website-->
-    <div id = 'title'>
+    <div class = 'top-container'>
       <a href = "./index.html">
       <h1>Pauline Baudry</h1>
        </a>
    </div>
 
+
+
   <!--Menu buttons-->
+  <div class ="top-container">
     <div id = 'menu'>
-    <div id = 'blog-menu'><a href="./blog.html">BLOG & DATA VISUALISATIONS</a></div>
+		<div class="menuitem"><a href="./blog.html">BLOG & DATA VISUALISATIONS</a></div>
+		<!--<div class="menuitem"><a href="./cv.html">CV</a></div>-->
     </div>
+	</div>
+
 
   </div>
 
-  <div id = 'middle'>
+  <div id = 'blog-middle'>
 
     <div class = 'blog-card'><a href="./francophone-rap.html">
         <img class='blog-photo' src = "./img/rap-cover.png"  alt "Micrphone" />
@@ -73,9 +79,10 @@
     <div class = 'blog-card'>
     </div>
   </div>-->
-</div>
-
-  <div id = 'bottom'>
+<br>
+  <div id = 'link-container'>
+  <div id = 'links'>
+    <br>
       <div class = 'link-icon'>
       <a href="https://www.linkedin.com/in/pauline-baudry/" target = "_blank">
         <img src = "./img/linkedin.png"  alt "Linkedin logo" />
@@ -95,13 +102,13 @@
     </div>
 </div>
 
-
+    </div>
 
   <!--JAVASCRIPT-->
   <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.min.js?ver=1.10.2'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
   <script type='text/javascript' src='./javascript.js'></script>
 
-
+</div>
 </body>
 </html>
