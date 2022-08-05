@@ -326,4 +326,9 @@ color : #35586C;
     visibility: hidden;
   }
 
+  iframe{
+    width: 500px;
+    float: left;
+  }
+
 }
