@@ -1,21 +1,23 @@
+
 body{
   font-family: 'Raleway', sans-serif;
   font-weight: 100;
   margin:0;
-  padding: 0;
+  margin-right: 0px;
+  padding: 0px;
   width: 100%;
   display: inline-block;
 /*font-family: 'Trebuchet MS', sans-serif;*/
 }
 
-
-
 /*TOP*/
 
 #top{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
   padding-top: 60px;
-  padding-left: 3%;
-  padding-right: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
   width: 94%;
   float:left;
   display: inline-block;
@@ -29,6 +31,14 @@ body{
   float: left;
   width: 70%;
   min-width: 500px;
+  font-size: 24px;
+  font-weight: 1000;
+}
+
+#title h1{
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
 }
 
 #title a{
@@ -86,8 +96,7 @@ color : #35586C;
 /*MIDDLE*/
 
 #middle{
-  padding: 3%;
-  width: 94%;
+  width: 100%;
   float: left;
 }
 
@@ -119,16 +128,16 @@ color : #35586C;
 /*BOTTOM*/
 
 #bottom{
-  float: left;
-  padding-left: 45%;
+float: left;
+  margin: auto;
+  margin-left: 45%;
 }
 
 
-
 .link-icon{
-  width: 30px;
   float: left;
   padding: 10px;
+
 }
 
 .link-icon img{
@@ -137,14 +146,15 @@ color : #35586C;
 
 
 
+
 /*BLOG*/
+
 
 .blog-card{
   width: 32%;
   min-width: 300px;
   float: left;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding: 7px;
   position: relative;
 }
 
@@ -182,6 +192,7 @@ color : #35586C;
 
 #article{
   width: 100%;
+  float: left;
 }
 
 #text-title img{
@@ -190,40 +201,54 @@ color : #35586C;
 
 #text-title {
   width: 80%;
-  padding-left: 10%;
+  margin-left: 10%;
+  float: left;
 }
 
 #text{
   width: 80%;
-  padding-left: 10%;
+  margin-left: 10%;
+  float: left;
 }
+
+
 
 #text-title h1{
   text-align: center;
   font-family: 'Merriweather';
+  font-size: 34px;
+  font-weight: 100;
+  line-height: 1.5;
 }
 
 #text-title h2{
   text-align: center;
   font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 1.5;
 }
 
 #text h1{
   text-align: left;
   font-family: 'Merriweather';
+
 }
 
 #text h2{
   text-align: center;
   font-family: 'Roboto';
+
 }
 
 
 #text-title h3{
   text-align: center;
   font-family: 'Roboto';
+  font-size: 20px;
   font-weight: 100;
+  line-height: 1.5;
 }
+
 #text-title a{
   color:grey;
   font-size: 18px;
@@ -240,6 +265,7 @@ color : #35586C;
   text-align: justify;
   font-size: 20px;
   font-weight: 200;
+  letter-spacing: 1px;
 }
 
 #text ul{
@@ -261,13 +287,27 @@ color : #35586C;
       width: 100%;
     }
 
-  #top{
-    padding-top: 60px;
-    padding-left: 1%;
-    padding-right: 1%;
-    width: 98%;
-    float:left;
-    display: inline-block;
+    #top{
+        padding-top: 60px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 100%;
+        float:left;
+        display: inline-block;
+      }
+
+    #middle{
+    padding: 1%;
+    float: left;
+    width: 100%;
+  }
+
+  #bottom{
+  float: left;
+    margin: auto;
+    padding-left: 35%;
   }
 
   #menu {
@@ -279,15 +319,6 @@ color : #35586C;
       float: left;
   }
 
-  #middle{
-    padding: 1%;
-    float: left;
-    width: 98%;
-  }
-
-  #bottom{
-    padding-left: 35%;
-  }
 
   #photo{
     float: left;
@@ -302,11 +333,13 @@ color : #35586C;
   #text-title {
     width: 100%;
     padding-left: 0px;
+    margin-left: 0%;
   }
 
   #text{
     width: 100%;
     padding-left: 0px;
+    margin-left: 0%;
   }
 
   .img_description{
@@ -326,9 +359,41 @@ color : #35586C;
     visibility: hidden;
   }
 
+
   iframe{
     width: 500px;
     float: left;
   }
 
+
+
+
 }
+/*MAP TREE*/
+
+#map_trees{
+  outline-style: solid;
+  padding: 3px;
+}
+
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; /*aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  .svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  svg .rect {
+    fill: white;
+    stroke: steelblue;
+    stroke-width: 5px;
+  }
