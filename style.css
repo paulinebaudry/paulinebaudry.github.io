@@ -73,7 +73,8 @@ color : #35586C;
 .dropdown {
   position: relative;
   display: inline-block;
-    float: right;
+  float: right;
+  margin-left: 3%;
 }
 
 
