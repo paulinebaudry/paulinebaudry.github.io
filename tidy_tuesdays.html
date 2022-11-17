@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Pauline Baudry</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id = 'top'>
+  <!--Title of website-->
+    <div id = 'title'>
+      <a href = "https://paulinebaudry.com/">
+      <h1>Pauline Baudry</h1>
+       </a>
+   </div>
+
+  <!--Menu buttons-->
+    <div id = 'menu'>
+    <div id = 'blog-menu'><a href="https://paulinebaudry.com/blog">BLOG & DATA VISUALISATIONS</a></div>
+    </div>
+
+  </div>
+
+  <div id = 'middle'>
+<div class = 'tt-intro'>
+    <p>I have made the following visualisations as part of the community-based online challenge <a href = "https://github.com/rfordatascience/tidytuesday"target="_blank">Tidy Tuesday</a>. All visualisations are made in R.</p>
+</div>
+
+<div class = 'tt-entry'>
+  <div class = 'tt-text'>
+        <h2>Web page metrics</h2>
+        <h5>November 15 2022</h5>
+        <h4>Data source: <a href = "https://httparchive.org/reports/loading-speed?start=earliest&end=latest&view=list"target="_blank">httparchive.org</a></h4>
+        <h4>Code <a href = "https://github.com/paulinebaudry/tidy_tuesday/blob/main/2022-11-15/Website_metrics.R"target="_blank">on Github</a> </h4>
+  </div>
+
+        <img class='tt-img' src = "./img/website_accessibility_scores.png"  alt "Timeseries line graph showing the distribution of monthly web page accessibility scores between 2018 and 2022, projecting scores for the median, as well as 10th, 25th, 75th and 90th percentiles." />
+
+</div>
+<br>
+
+    <div class = 'tt-entry'>
+      <div class = 'tt-text'>
+            <h2>Horror movies</h2>
+            <h5>November 2 2022</h5>
+            <h4>Data source: <a href = "https://github.com/tashapiro/horror-movies/tree/main/data"target="_blank">extraction</a> made by Tanya Shapiro from the The Movie Database</h4>
+            <h4>Code <a href = "https://github.com/paulinebaudry/tidy_tuesday/blob/main/2022-11-03/Horror_movies.R"target="_blank">on Github</a> </h4>
+      </div>
+
+            <img class='tt-img' src = "./img/Horror_movies.png"  alt "Spiral plot showing the number of horror movies released every month since 1980. The middle of the spiral starts at January 1980 and finishes out on the left in December 2022. Counts are plotted as an area chart." />
+
+    </div>
+<br>
+    <div class = 'tt-entry'>
+      <div class = 'tt-text'>
+            <h2>Great British Bake Off</h2>
+            <h5>October 28 2022</h5>
+            <h4>Data source: <a href = "https://bakeoff.netlify.app/"target="_blank">Bakeoff package</a> from Alison Hill, Chester Ismay and Richard Iannone.</h4>
+            <h4>Code <a href = "https://github.com/paulinebaudry/tidy_tuesday/blob/main/2022-10-28/GBBO.R"target="_blank">on Github</a> </h4>
+      </div>
+
+            <img class='tt-img' src = "./img/BakeOff.png"  alt "Bi-directional horizontal barchart showing the percentage of recipes on The Great British Bake Off show that included the top 10 most used ingredients. The left side of the chart show percentages for recipes of contestants who won or moved to the next round ; the left side of the chart show percentages for recipes of contestants that were disqualified." />
+
+    </div>
+
+
+
+    </div>
+
+
+
+  <div id = 'bottom'>
+      <div class = 'link-icon'>
+      <a href="https://www.linkedin.com/in/pauline-baudry/" target = "_blank">
+        <img src = "./img/linkedin.png"  alt "Linkedin logo" />
+      </a>
+    </div>
+
+      <div class = 'link-icon'>
+      <a href = "https://twitter.com/PauBaudry"target = "_blank">
+        <img src = "./img/twitter.png"  alt "Twitter logo" />
+      </a>
+    </div>
+
+      <div  class = 'link-icon'>
+      <a href = "mailto:pauline.a.baudry@gmail.com"target = "_blank">
+        <img src = "./img/email.png" alt "Email logo" />
+      </a>
+    </div>
+</div>
+
+
+
+  <!--JAVASCRIPT-->
+  <script type='text/javascript' src='https://code.jquery.com/jquery-1.10.2.min.js?ver=1.10.2'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script>
+  <script type='text/javascript' src='./javascript.js'></script>
+
+
+</body>
+</html>
