@@ -49,8 +49,9 @@ body{
 }
 
 #menu{
-  float: left;
-  width: 30%;
+  float: right;
+  padding-top: 0px;
+  min-width: 200px;
   padding-top: 40px;
   padding-bottom: 15px;
 }
@@ -95,6 +96,8 @@ color : #35586C;
 
 .dropdown-content a {
   color: black;
+  min-width: 100px;
+  width: 100px;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -123,11 +126,10 @@ color : #35586C;
 }
 
 #bio{
-  width: 50%;
+  width: 40%;
   float: left;
   max-width: 700px;
-  padding-right: 3%;
-  padding-left: 3%;
+  padding-left: 10%;
 }
 
 #bio p{
@@ -136,8 +138,9 @@ color : #35586C;
 }
 
 #photo{
-  float: right;
-  padding-right: 3%;
+  float: left;
+  padding-left: 100px;
+  padding-top: 20px;
 }
 
 #photo img{
@@ -305,7 +308,7 @@ float: left;
 
 
   /*Responsive layout*/
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1000px) {
     .blog-card {
       width: 100%;
     }
@@ -334,8 +337,9 @@ float: left;
   }
 
   #menu {
-      padding-top: 0px;
-      float: left;
+    padding-top: 0px;
+    padding-left: 0px;
+    float: left;
   }
 
   #menu a{
@@ -343,14 +347,20 @@ float: left;
   }
 
 
+
+
   #photo{
     float: left;
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #bio{
     width: 100%;
     float: left;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   #text-title {
@@ -388,7 +398,9 @@ float: left;
     float: left;
   }
 
-
+.dropdown {
+  float: left;
+}
 
 
 }
@@ -457,7 +469,7 @@ float: left;
 }
 
 .tt-text{
-  float: left;
+  float: right;
   width: 35%;
 
 }
@@ -467,7 +479,7 @@ color: black;
 }
 
 .tt-img{
-  float : right;
+  float : left;
   width : 60%;
   border-style: solid;
   border-width: 0.2px;
