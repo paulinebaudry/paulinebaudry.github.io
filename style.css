@@ -132,6 +132,10 @@ color : #35586C;
   padding-left: 10%;
 }
 
+#bio h1{
+  font-weight:normal;
+}
+
 #bio p{
   font-size: 18px;
   text-align: justify;
