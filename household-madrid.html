@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>Pauline Baudry</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="stylesheet" href="./style.css">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">
+
+    <style>
+      .holder{
+        display:flex;
+
+      }
+
+
+
+      .steps{
+        width: 100%;
+        margin-left: 50px;
+       z-index: 0;
+        background-color: rgb(255 255 255 / 0.7);
+
+      }
+
+      #step-conclusion{
+        float: left;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-top: 25%;
+        margin-bottom: 25%;
+      }
+
+      #chart{
+        width: 100%;
+        margin-right: 5px;
+        position: sticky;
+        top: 50px;
+        left: 100px;
+        height: 600px;
+      }
+
+
+      .step{
+        min-height: 1000px;
+        width: 100%;
+      }
+
+
+
+
+
+      /*Responsive layout*/
+      @media screen and (max-width: 800px) {
+        .holder{
+        display:block;
+        }
+
+        .steps{
+          width: 100%;
+          margin-left: 0px;
+           z-index: 0;
+           background-color: transparent;
+
+        }
+
+        .step{
+          margin-left: 5%;
+          margin-right: 5%;
+          width: 90%;
+        }
+
+        .step h1{
+          background-color: rgb(255 255 255 / 0.99);
+        }
+
+        .step p{
+          background-color: rgb(255 255 255 / 0.99);
+        }
+
+
+
+        #chart{
+          left: 0px;
+          margin-right: 0px;
+          padding-left: 20px;
+           z-index: -1;
+        }
+
+        #step-conclusion{
+          float: left;
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-top: 35%;
+          margin-bottom: 35%;
+        }
+      }
+
+
+    </style>
+
+
+</head>
+
+<body>
+  <div id = 'top'>
+  <!--Title of website-->
+    <div id = 'title'>
+      <a href = "https://paulinebaudry.com/">
+      <h1>Pauline Baudry</h1>
+       </a>
+   </div>
+
+  <!--Menu buttons-->
+  <div id = 'menu'>
+  <div class="dropdown">
+    <button class="dropbtn">Data Visualisations
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://paulinebaudry.com/blog">Blog</a>
+      <a href="https://paulinebaudry.com/tidy_tuesdays">Tidy Tuesday graphs</a>
+      <a href="https://paulinebaudry.com">About</a>
+    </div>
+  </div>
+</div>
+
+	</div>
+
+  <div id = "middle">
+
+  <div id = "article">
+
+    <div id = 'text-title'>
+      <img src = "./img/household-cover-long.png"  alt "Cleaning product on blue background" />
+
+    <h1>Who wears the pantalones in the house?</h1>
+    <h2>Exploring gender roles in Madrid households</h2>
+    <h3>February 7, 2023</h3>
+  </div>
+
+  <div id = 'text-scrolly'>
+    <section>
+      <div class="holder">
+
+
+    <svg id ="chart"></svg>
+        <div class="steps">
+
+          <div class = "step">
+          <p>  The city of Madrid conducted <a href = "https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=65ebcfb709071810VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default"target="_blank">a survey </a> in June 2022 to collect information about the sociodemographic situation of households. A total of 8,040 people from across various districts of the city were interviewed, of which 5,496 responded to questions regarding distribution of household chores between men and women.</p>
+            <br>
+            <br>
+          <p>  Each square represents just under 55 people, which is 1% of the sample population.</p>
+          </div>
+
+          <div class = "step">
+          <p>  Out of that sample a slight majority were women. </p>
+          </div>
+
+          <div class = "step">
+            <h1>Who does the most household chores?</h1>
+            <p>When asked who does the most in the household, across different types of chores, most people answered that both women and men are equally involved. Some people considered that most tasks were not taken care of by either, most likely implying external help.</p>
+            <p>For those who do notice a difference, the woman is often seen as responsible for more tasks.<p>
+            </div>
+
+          <div class = "step">
+              <p>Interestingly, respondents majoritarely perceive themselves or somebody of the same sex to do to the most chores. People who said that the man in the household does the most were majoritarily men themselves. The same goes for women who mostly said that women do the most.</p>
+          </div>
+
+          <div class = "step">
+            <p>This self-representation is partly explained by the fact that some of the surveyed people are either single parents or other potential single residents.</p>
+          </div>
+
+          <div class = "step">
+            <p>However, this proportion remains small and the majority of interviewed people were part of a couple.</p>
+          </div>
+
+          <div class = "step">
+            <p>While the distributions within each household type are relatively consistent with the overall responses, men are proportionally slightly more involved in chores when part of a couple without children than a couple with children.</p>
+          </div>
+
+
+          <div class = "step">
+            <h1>What type of chores do women and men do the most?</h1>
+          </div>
+
+
+          <div class = "step">
+            <p>Most chores are seen to be equally undertaken by women and men, or by neither. This is consistent with the overall distribution of household responsibilities.<p>
+          </div>
+
+          <div class = "step">
+            <p>When comparing women and men, women are more largely responsible than men for cooking, shopping, washing clothes and taking care of others including children and the elderly.</p>
+            <p>A majority of households consider that cooking is taken care of by the woman.</p>
+          </div>
+
+          <div class = "step">
+            <p>In comparison, men are more often associated to administrative tasks and repairing things in the house.<p>
+            <p>A majority of households consider repairing to be a male activity.</p>
+          </div>
+
+          <div class = "step">
+            <p>When comparing the chores that most women and men respectively do, a striking observation is that the ones that women are mainly responsible for are recurring tasks whereas the ones conducted mainly by men are more occasional occurences. This difference in types of chores and frequency is a reality observed through different studies, such as <a href="https://www.theguardian.com/money/2022/aug/15/how-to-achieve-an-equal-split-of-household-chores-kate-mangino"target="_blank">this one</a> conducted by gender expert Kate Mangino.</p>
+          </div>
+</div>
+
+
+
+      </div>
+    </section>
+
+    <div id = "step-conclusion">
+      <h1>In conclusion</h1>
+      <p>The data from this survey, covering thousands of different households in Madrid, reveals that a majority of homes are overall being taken care of by both women and men.</p>
+      <p>However, looking into the sex of the respondents as well as into more specific households tasks, a recurring pattern can undeniably be identified, underlying persisting disparities of responsibilities between women and men.</p>
+      </div>
+
+  </div>
+
+
+</div>
+</div>
+
+<div id = 'bottom'>
+  <br>
+    <div class = 'link-icon'>
+    <a href="https://www.linkedin.com/in/pauline-baudry/" target = "_blank">
+      <img src = "./img/linkedin.png"  alt "Linkedin logo" />
+    </a>
+  </div>
+
+    <div class = 'link-icon'>
+    <a href = "https://twitter.com/PauBaudry"target = "_blank">
+      <img src = "./img/twitter.png"  alt "Twitter logo" />
+    </a>
+  </div>
+
+    <div  class = 'link-icon'>
+    <a href = "mailto:pauline.a.baudry@gmail.com"target = "_blank">
+      <img src = "./img/email.png" alt "Email logo" />
+    </a>
+  </div>
+</div>
+
+<!-- Load d3.js -->
+<script src="https://unpkg.com/scrollama"></script>
+  <script src="https://d3js.org/d3.v6.js"></script>
+
+  <script>
+
+  const width = 400,
+    height= 400;
+    let interval
+
+    d3.csv("https://raw.githubusercontent.com/paulinebaudry/paulinebaudry.github.io/master/Informante_General_Cleaned.csv").then(function(data){
+
+
+        var peopleGender = d3.group(data, d => d.Sex)
+        var household_Answers_Sex = d3.group(data, d=> d.Overall_chores, d=> d.Sex)
+        var household_Answers = d3.group(data, d=> d.Overall_chores)
+        var household_Answers_Sex_Age = d3.group(data, d=> d.Overall_chores, d=> d.Sex, d=> d.Age)
+
+        var householdType = d3.group(data,d => d["Household Type"])
+        var householdTypeSex = d3.group(data,d => d["Household Type"],d=>d.Overall_chores)
+
+        console.log(householdType)
+        var numRect = d3.range(0,100,1)
+        var legend = d3.range(0,4,1)
+
+        var Array = []
+
+
+        var man_group = Math.round(((household_Answers.get("Man").length)*100)/data.length)
+        var woman_group = Math.round((household_Answers.get("Woman").length)*100/data.length)
+        var both_group = Math.round((household_Answers.get("Both").length)*100/data.length)
+        var none_group = Math.round((household_Answers.get("None").length)*100/data.length)
+
+
+        var woman_ans_man = Math.round((household_Answers_Sex.get("Man").get("Female").length)*100/data.length)
+        var woman_ans_woman = Math.round((household_Answers_Sex.get("Woman").get("Female").length)*100/data.length)
+        var woman_ans_none = Math.round((household_Answers_Sex.get("None").get("Female").length)*100/data.length)
+        var woman_ans_both = Math.round((household_Answers_Sex.get("Both").get("Female").length)*100/data.length)
+
+
+
+newArray = []
+newArrayHHType= []
+var groupPop = 0
+var groupPct = 0
+var filteredGroup = 0
+var filteredGroupPct = 0
+
+
+
+function createArrayHhType(voted_sex,household_type){
+
+  var filteredGroup = data.filter(function(d){return d["Household Type"] == household_type && d.Overall_chores == voted_sex})
+  var filteredGroupPct = (filteredGroup.length*100)/data.length
+  console.log(filteredGroupPct)
+    for (let i =0 ; i<Math.ceil(filteredGroupPct);i++){
+      newArrayHHType.push({"Overall_chores" : voted_sex, "Household_type" :household_type, "Count" : filteredGroup.length, "Percentage" : filteredGroupPct})
+    }
+
+  }
+
+  //Single parent
+  createArrayHhType("Man","Single parent"); //Man group
+  createArrayHhType("Woman","Single parent");//Woman group
+  createArrayHhType("Both","Single parent"); //Both group
+  createArrayHhType("None","Single parent");//None group
+  //Other
+  createArrayHhType("Man","Other"); //Man group
+  createArrayHhType("Woman","Other");//Woman group
+  createArrayHhType("Both","Other");//Both group
+  createArrayHhType("None","Other"); //None group
+  //Couple with children
+  createArrayHhType("Man","Couple with children");//Man group
+  createArrayHhType("Woman","Couple with children");//Woman group
+  createArrayHhType("Both","Couple with children");//Both group
+  createArrayHhType("None","Couple with children"); //None group
+  //Couple w/o children
+  createArrayHhType("Man","Couple without children"); //Man group
+  createArrayHhType("Woman","Couple without children"); //Woman group
+  createArrayHhType("Both","Couple without children");//Both group
+  createArrayHhType("None","Couple without children");//None group
+
+
+var newArrayGroupedSex = d3.group(newArray, d=> d.Sex)
+var newArrayGroupedChores = d3.group(newArray, d=> d.Overall_chores)
+var newArrayGroupedChoresAge = d3.group(newArray, d=> d.Overall_chores, d=> d.Age)
+
+newArraySorted = d3.ascending(newArray)
+
+          const rectangle = d3
+            .select("svg")
+            .selectAll("rect")
+            .data(data)
+            .join("rect")
+            .attr("x", 0)
+            .attr("y",0)
+            .attr("width", 20)
+            .attr("height",20)
+            .style("fill","transparent");
+
+            var titleArray = [{x: 5, y:30, group:"Man"},
+                              {x: 100, y:30, group:"Woman"},
+                              {x: 5, y:230, group:"Both"},
+                              {x: 250, y:230, group:"None"}]
+
+          const title = d3
+           .select("svg")
+           .append("text")
+           .transition().duration(750)
+           .attr("font-size", "16px")
+           .style('fill','black')
+           .attr("opacity", "0")
+           .text(" ");
+
+
+function makeTitle(text,opacity,x,y,color,size){
+
+const title = d3
+  .select("svg")
+  .append("text")
+  .attr("x",x)
+  .attr("y",y)
+  .attr("font-size", size)
+  .attr("font-weight",400)
+  .style('fill',color)
+  .attr("opacity", opacity)
+  .text(text);
+
+};
+
+function makeLine(x1,y1,x2,y2,color){
+  svg.append('line')
+    .style("stroke", color)
+    .style("stroke-width", 2)
+    .attr("x1", x1)
+    .attr("y1", y1)
+    .attr("x2", x2)
+    .attr("y2", y2);
+
+    svg.append('line')
+      .style("stroke", color)
+      .style("stroke-width", 2)
+      .attr("x1", x2)
+      .attr("y1", y2)
+      .attr("x2", x2+85)
+      .attr("y2", y1);
+}
+
+
+            function clearRect(){
+              d3.selectAll("text").remove();
+               d3.selectAll("rect").style("fill","transparent");
+               d3.selectAll("rect").style("stroke","transparent");
+               d3.selectAll(".domain").remove();
+               d3.selectAll(".tick").remove();
+               d3.selectAll("line").style("stroke", "transparent")
+               d3.selectAll("path").style("stroke","transparent");
+               d3.selectAll("path").style("fill","transparent");
+               d3.selectAll("path").style("marker-end","none");
+            }
+
+//1: Total number of respondants
+            function moveTotal(){
+              clearRect ()
+                rectangle.data(numRect)
+                .transition()
+                .duration(750)
+                .attr("x", (d,i) => i%10 * 30)
+                .attr("y", ((d,i) =>  Math.floor(i/10) * 30))
+                .style("fill","grey")
+                .style("stroke","grey")
+                .attr("width","20")
+                .attr("height","20") ;
+            }
+
+
+//2: Total number of men and women
+            function moveGender(){
+
+              clearRect()
+
+              rectangle.data(numRect).transition().duration(750)
+              .attr("x", (d,i) => i%10 * 30)
+              .attr("y", (d,i) =>  Math.floor(i/10) * 30)
+              .attr("width","20")
+              .attr("height","20")
+              .style("fill",(d,i) =>{ if(i+1 <= Math.round(((peopleGender.get("Female").length)*100)/data.length)){return "grey" ; }
+              else if (i+1 >= Math.round(((peopleGender.get("Male").length)*100)/data.length)){return "white" ; } })
+              .style("stroke", (d,i)=>{ if(i+1 <= Math.round(((peopleGender.get("Female").length)*100)/data.length)){return "white" ;}
+              else if (i+1 >= Math.round(((peopleGender.get("Male").length)*100)/data.length)){return "grey"}
+            })
+
+              makeTitle("Women","1",300,60,'grey',"16px")
+              makeTitle(peopleGender.get("Female").length,"1",300,90,"grey","16px")
+              makeTitle("Men","1",300,210,'grey',"16px")
+              makeTitle(peopleGender.get("Male").length,"1",300,240,"grey","16px")
+
+                }
+
+
+
+
+//3: Who does the most? according to gender
+            function groupsHousehold(){
+              clearRect ()
+              rectangle.data(numRect)
+              .transition()
+              .duration(750)
+              .attr("x", function(d,i){
+                 if(i+1 <= man_group){return i%5 * 30 ; } //X position for man group
+                 else if ( i+1 <= woman_group + man_group){return ((i-man_group)%5 * 30) +200 ; }//X position for woman group
+                 else if (i+1 > man_group+woman_group && i+1 <= (man_group + woman_group + both_group)){return ((i-(man_group+woman_group))%5 * 30); }//X position for both group
+                 else if (i+1 > man_group+woman_group+ both_group){return ((i-(man_group+woman_group+both_group))%5 * 30)+200; }//X position for none group
+               })
+               .attr("y", function(d,i){
+                  if(i+1 <= man_group){return Math.floor(i/5) * 30 + 50; }//Y position for man group
+                  else if (i+1 <= woman_group + man_group){return Math.floor((i-man_group)/5) * 30 + 50; }//Y position for woman group, bring back to same Y level as man group
+                  else if ((i+1 > man_group+woman_group && i+1 <= (man_group + woman_group + both_group))){return (Math.floor((i-(man_group+woman_group))/5) * 30) +250;}//Y position for both group
+                  else if (i+1 > man_group+woman_group+both_group){return (Math.floor((i-(man_group+woman_group+both_group))/5) * 30) + 250;}//Y position for none group
+
+                })
+               .attr("width","20")
+               .attr("height","20")
+               .style("fill", function(d,i){
+                 if(i+1  <= man_group){return "#1c1f4c" ;}
+                 else if(i+1 > man_group &&  i+1<= man_group+woman_group){return "#00848c" ;}
+                 else if(i+1 > man_group + woman_group && i+1 <= man_group + woman_group+both_group){return "#fec20f" ;}
+                 else if(i+1> man_group + woman_group +both_group && i+1 <= data.length) { return "#c3c0b1" ;}
+               })
+
+               .style("opacity",1)
+
+               makeTitle("Man","1",5,35,'#1c1f4c',"16px")
+               makeTitle("Woman","1",200,35,'#00848c',"16px")
+               makeTitle("Both","1",5,235,'#fec20f',"16px")
+               makeTitle("Neither","1",200,235,'#c3c0b1',"16px")
+             }
+
+             function groupsHouseholdGender(){
+               clearRect ()
+               rectangle.data(numRect)
+               .transition()
+               .duration(750)
+               .attr("x", function(d,i){
+                  if(i+1 <= man_group){return i%5 * 30 ; } //X position for man group
+                  else if ( i+1 <= woman_group + man_group){return ((i-man_group)%5 * 30) +200 ; }//X position for woman group
+                  else if (i+1 > man_group+woman_group && i+1 <= (man_group + woman_group + both_group)){return ((i-(man_group+woman_group))%5 * 30); }//X position for both group
+                  else if (i+1 > man_group+woman_group+ both_group){return ((i-(man_group+woman_group+both_group))%5 * 30)+200; }//X position for none group
+                })
+                .attr("y", function(d,i){
+                   if(i+1 <= man_group){return Math.floor(i/5) * 30 + 50; }//Y position for man group
+                   else if (i+1 <= woman_group + man_group){return Math.floor((i-man_group)/5) * 30 + 50; }//Y position for woman group, bring back to same Y level as man group
+                   else if ((i+1 > man_group+woman_group && i+1 <= (man_group + woman_group + both_group))){return (Math.floor((i-(man_group+woman_group))/5) * 30) +250;}//Y position for both group
+                   else if (i+1 > man_group+woman_group+both_group){return (Math.floor((i-(man_group+woman_group+both_group))/5) * 30) + 250;}//Y position for none group
+
+                 })
+                .attr("width","20")
+                 .attr("height","20")
+                .style("opacity",1)
+                .style("fill", function(d,i){
+                  if(i+1 <= woman_ans_man){return "#1c1f4c" ;}
+                  else if(i+1 > man_group && i+1 <= man_group + woman_ans_woman){return "#00848c" ;}
+                  else if(i+1 > man_group+woman_group && i+1 <= man_group+woman_group + woman_ans_both){return "#fec20f" ;}
+                  else if(i+1 > man_group+woman_group+both_group && i+1 <= man_group+woman_group + both_group+ woman_ans_none) { return "#c3c0b1" ;}
+                  else {return "white" ;}
+                })
+
+                .style("stroke", function(d,i){
+                  if(i+1  <= man_group){return "#1c1f4c" ;}
+                  else if(i+1 > man_group &&  i+1<= man_group+woman_group){return "#00848c" ;}
+                  else if(i+1 > man_group + woman_group && i+1 <= man_group + woman_group+both_group){return "#fec20f" ;}
+                  else if(i+1> man_group + woman_group +both_group && i+1 <= data.length) { return "#c3c0b1" ;}
+                })
+
+                makeTitle("Man","1",5,35,'#1c1f4c',"16px")
+                makeTitle("Woman","1",200,35,'#00848c',"16px")
+                makeTitle("Both","1",5,235,'#fec20f',"16px")
+                makeTitle("Neither","1",200,235,'#c3c0b1',"16px")
+
+
+                /*legend*/
+                d3.select("svg")
+                .append("rect")
+                .data(legend)
+                .attr("x",0)
+                .attr("y",575)
+                .attr("width",20)
+                .attr("height",20)
+                .attr("fill","#5A5A5A")
+                .attr("stroke","#5A5A5A")
+
+                d3.select("svg")
+                .append("rect")
+                .data(legend)
+                .attr("x",200)
+                .attr("y",575)
+                .attr("width",20)
+                .attr("height",20)
+                .attr("fill","white")
+                .attr("stroke","#5A5A5A")
+
+
+
+
+                makeTitle("Female respondent","1",30,590,"#5A5A5A","14px")
+                makeTitle("Male respondent","1",230,590,"#5A5A5A","14px")
+
+
+              }
+
+
+    var singleParent = newArrayHHType.filter(function(d){return d.Household_type == "Single parent"}).length
+    var coupleNoChildren = newArrayHHType.filter(function(d){return d.Household_type == "Couple without children"}).length
+    var coupleChildren = newArrayHHType.filter(function(d){return d.Household_type == "Couple with children"}).length
+    var other = newArrayHHType.filter(function(d){return d.Household_type == "Other"}).length
+
+    var singPar = householdTypeSex.get("Single parent")
+
+             function singleHousehold(){
+               clearRect ()
+               rectangle.data(newArrayHHType)
+               .transition()
+               .duration(750)
+               .attr("x", function(d,i){
+                 if(d.Household_type == "Single parent"){return (i%6 * 30)+15 ; }
+                 else if(d.Household_type == "Other"){return ((i-(singleParent ))%6 * 30)+250;}
+                 else if(d.Household_type == "Couple with children"){return ((i-(singleParent + other))%6 * 30); }
+                 else if(d.Household_type == "Couple without children"){return ((i-(singleParent+ other + coupleChildren))%6 * 30) +250 ; }
+               })
+               .attr("y", function(d,i){
+                  if(d.Household_type == "Single parent"){return Math.floor(i/6) * 30 + 80; }//Y position for man group
+                  else if(d.Household_type == "Other"){return Math.floor((i-(singleParent))/6) * 30 + 80;}//Y position for none group
+                  else if(d.Household_type == "Couple with children"){return (Math.floor((i-(singleParent + other))/6) * 30) +260;}//Y position for both group
+                  else if(d.Household_type == "Couple without children"){return (Math.floor((i-(singleParent+ other + coupleChildren))/6) * 30) + 260; }//Y position for woman group, bring back to same Y level as man group
+                })
+                  .attr("width", 20)
+                 .attr("height","20")
+                .style("fill",function(d,i){
+                if(d.Overall_chores == "Man"){return "#1c1f4c" ;}
+                else if(d.Overall_chores == "Woman"){return "#00848c" ;}
+                else if(d.Overall_chores == "Both"){return "#fec20f" ;}
+                else if(d.Overall_chores == "None"){return "#c3c0b1" ;}
+              })
+              .style("opacity",function(d,i){
+                if(d.Household_type == "Single parent"|| d.Household_type == "Other" ){return "1" ;}
+                else{return "0.2"}
+              })
+
+              makeTitle("Single parent","1",35,70,'black',"16px")
+              makeTitle("Other","1",320,70,'black',"16px")
+              makeTitle("Couple with children","1",15,250,'grey',"16px")
+              makeTitle("Couple without children","1",255,250,'grey',"black")
+
+              makeLine(-80,40,5,0,"black")
+              makeLine(170,40,255,0,"black")
+              makeLine(-80,220,5,180,"grey")
+              makeLine(170,220,255,180,"grey")
+
+
+                         /*legend*/
+                         d3.select("svg")
+                         .append("rect")
+                         .data(legend)
+                         .attr("x",0)
+                         .attr("y",575)
+                         .attr("width",20)
+                         .attr("height",20)
+                         .attr("fill","#1c1f4c")
+
+                         d3.select("svg")
+                         .append("rect")
+                         .data(legend)
+                         .attr("x",100)
+                         .attr("y",575)
+                         .attr("width",20)
+                         .attr("height",20)
+                         .attr("fill","#00848c")
+
+                         d3.select("svg")
+                         .append("rect")
+                         .data(legend)
+                         .attr("x",220)
+                         .attr("y",575)
+                         .attr("width",20)
+                         .attr("height",20)
+                         .attr("fill","#fec20f")
+
+                         d3.select("svg")
+                         .append("rect")
+                         .data(legend)
+                         .attr("x",320)
+                         .attr("y",575)
+                         .attr("width",20)
+                         .attr("height",20)
+                         .attr("fill","#c3c0b1")
+
+                         makeTitle("Man","1",30,590,'#1c1f4c',"16px")
+                         makeTitle("Woman","1",130,590,'#00848c',"16px")
+                         makeTitle("Both","1",250,590,'#fec20f',"16px")
+                         makeTitle("Neither","1",350,590,'#c3c0b1',"16px")
+
+
+
+            }
+
+           function couples(){
+             clearRect ()
+             rectangle.data(newArrayHHType)
+             .attr("x", function(d,i){
+               if(d.Household_type == "Single parent"){return (i%6 * 30)+15 ; }
+               else if(d.Household_type == "Other"){return ((i-(singleParent ))%6 * 30)+250;}
+               else if(d.Household_type == "Couple with children"){return ((i-(singleParent + other))%6 * 30); }
+               else if(d.Household_type == "Couple without children"){return ((i-(singleParent+ other + coupleChildren))%6 * 30) +250 ; }
+             })
+             .attr("y", function(d,i){
+                if(d.Household_type == "Single parent"){return Math.floor(i/6) * 30 + 80; }//Y position for man group
+                else if(d.Household_type == "Other"){return Math.floor((i-(singleParent))/6) * 30 + 80;}//Y position for none group
+                else if(d.Household_type == "Couple with children"){return (Math.floor((i-(singleParent + other))/6) * 30) +260;}//Y position for both group
+                else if(d.Household_type == "Couple without children"){return (Math.floor((i-(singleParent+ other + coupleChildren))/6) * 30) + 260; }//Y position for woman group, bring back to same Y level as man group
+              })
+
+              .attr("width", 20)
+              .attr("height","20")
+            .style("fill",function(d,i){
+              if(d.Overall_chores == "Man"){return "#1c1f4c" ;}
+              else if(d.Overall_chores == "Woman"){return "#00848c" ;}
+              else if(d.Overall_chores == "Both"){return "#fec20f" ;}
+              else if(d.Overall_chores == "None"){return "#c3c0b1" ;}
+            })
+            .style("opacity",function(d,i){
+              if(d.Household_type == "Couple with children" || d.Household_type == "Couple without children" ){return "1" ;}
+              else{return "0.2"}
+            })
+
+            makeTitle("Single parent","1",35,70,'grey',"16px")
+            makeTitle("Other","1",320,70,'grey',"16px")
+            makeTitle("Couple with children","1",15,250,'black',"16px")
+            makeTitle("Couple without children","1",255,250,'black',"black")
+
+
+            makeLine(-80,40,5,0,"grey")
+            makeLine(170,40,255,0,"grey")
+            makeLine(-80,220,5,180,"black")
+            makeLine(170,220,255,180,"black")
+
+            /*legend*/
+            d3.select("svg")
+            .append("rect")
+            .data(legend)
+            .attr("x",0)
+            .attr("y",575)
+            .attr("width",20)
+            .attr("height",20)
+            .attr("fill","#1c1f4c")
+
+            d3.select("svg")
+            .append("rect")
+            .data(legend)
+            .attr("x",100)
+            .attr("y",575)
+            .attr("width",20)
+            .attr("height",20)
+            .attr("fill","#00848c")
+
+            d3.select("svg")
+            .append("rect")
+            .data(legend)
+            .attr("x",220)
+            .attr("y",575)
+            .attr("width",20)
+            .attr("height",20)
+            .attr("fill","#fec20f")
+
+            d3.select("svg")
+            .append("rect")
+            .data(legend)
+            .attr("x",320)
+            .attr("y",575)
+            .attr("width",20)
+            .attr("height",20)
+            .attr("fill","#c3c0b1")
+
+            makeTitle("Man","1",30,590,'#1c1f4c',"16px")
+            makeTitle("Woman","1",130,590,'#00848c',"16px")
+            makeTitle("Both","1",250,590,'#fec20f',"16px")
+            makeTitle("Neither","1",350,590,'#c3c0b1',"16px")
+          }
+
+          function allHousehold(){
+            clearRect ()
+            rectangle.data(newArrayHHType)
+            .attr("x", function(d,i){
+              if(d.Household_type == "Single parent"){return (i%6 * 30)+15 ; }
+              else if(d.Household_type == "Other"){return ((i-(singleParent ))%6 * 30)+250;}
+              else if(d.Household_type == "Couple with children"){return ((i-(singleParent + other))%6 * 30); }
+              else if(d.Household_type == "Couple without children"){return ((i-(singleParent+ other + coupleChildren))%6 * 30) +250 ; }
+            })
+            .attr("y", function(d,i){
+               if(d.Household_type == "Single parent"){return Math.floor(i/6) * 30 + 80; }//Y position for man group
+               else if(d.Household_type == "Other"){return Math.floor((i-(singleParent))/6) * 30 + 80;}//Y position for none group
+               else if(d.Household_type == "Couple with children"){return (Math.floor((i-(singleParent + other))/6) * 30) +260;}//Y position for both group
+               else if(d.Household_type == "Couple without children"){return (Math.floor((i-(singleParent+ other + coupleChildren))/6) * 30) + 260; }//Y position for woman group, bring back to same Y level as man group
+             })
+
+             .attr("width", 20)
+              .attr("height","20")
+           .style("fill",function(d,i){
+             if(d.Overall_chores == "Man"){return "#1c1f4c" ;}
+             else if(d.Overall_chores == "Woman"){return "#00848c" ;}
+             else if(d.Overall_chores == "Both"){return "#fec20f" ;}
+             else if(d.Overall_chores == "None"){return "#c3c0b1" ;}
+           })
+           .style("opacity",1)
+
+           makeTitle("Single parent","1",35,70,'black',"16px")
+           makeTitle("Other","1",320,70,'black',"16px")
+           makeTitle("Couple with children","1",15,250,'black',"16px")
+           makeTitle("Couple without children","1",255,250,'black',"black")
+
+
+           makeLine(-80,40,5,0,"black")
+           makeLine(170,40,255,0,"black")
+           makeLine(-80,220,5,180,"black")
+           makeLine(170,220,255,180,"black")
+
+           /*legend*/
+           d3.select("svg")
+           .append("rect")
+           .data(legend)
+           .attr("x",0)
+           .attr("y",575)
+           .attr("width",20)
+           .attr("height",20)
+           .attr("fill","#1c1f4c")
+
+           d3.select("svg")
+           .append("rect")
+           .data(legend)
+           .attr("x",100)
+           .attr("y",575)
+           .attr("width",20)
+           .attr("height",20)
+           .attr("fill","#00848c")
+
+           d3.select("svg")
+           .append("rect")
+           .data(legend)
+           .attr("x",220)
+           .attr("y",575)
+           .attr("width",20)
+           .attr("height",20)
+           .attr("fill","#fec20f")
+
+           d3.select("svg")
+           .append("rect")
+           .data(legend)
+           .attr("x",320)
+           .attr("y",575)
+           .attr("width",20)
+           .attr("height",20)
+           .attr("fill","#c3c0b1")
+
+           makeTitle("Man","1",30,590,'#1c1f4c',"16px")
+           makeTitle("Woman","1",130,590,'#00848c',"16px")
+           makeTitle("Both","1",250,590,'#fec20f',"16px")
+           makeTitle("Neither","1",350,590,'#c3c0b1',"16px")
+          }
+
+
+
+//4: Who does the most for each category? Bar chart
+
+//Count number of votes for each category
+
+//Empty array
+var longArray = []
+
+const margin = {top: 10, right: 20, bottom: 20, left: 80}
+
+const svg = d3.select("#chart")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform", `translate(${margin.left},${margin.top})`);
+
+  //Cooking
+  longArray.push({Task : "Cooking", "Man" : (data.filter(function(d){return d.Cooking == "Man"})).length,
+                            "Woman": (data.filter(function(d){return d.Cooking == "Woman"})).length,
+                            "Both" : (data.filter(function(d){return d.Cooking == "Both"})).length,
+                            "None" : (data.filter(function(d){return d.Cooking == "None"})).length})
+//Shopping
+longArray.push({Task :"Shopping", "Man" : (data.filter(function(d){return d.Shopping == "Man"})).length,
+                          "Woman": (data.filter(function(d){return d.Shopping == "Woman"})).length,
+                          "Both" : (data.filter(function(d){return d.Shopping == "Both"})).length,
+                          "None" : (data.filter(function(d){return d.Shopping == "None"})).length})
+
+  //House_Clothes
+longArray.push({Task : "Clothes", "Man" : (data.filter(function(d){return d.House_Clothes == "Man"})).length,
+                       "Woman": (data.filter(function(d){return d.House_Clothes == "Woman"})).length,
+                       "Both" : (data.filter(function(d){return d.House_Clothes == "Both"})).length,
+                       "None" : (data.filter(function(d){return d.House_Clothes == "None"})).length})
+
+ //Admin
+      longArray.push({Task : "Admin" ,"Man" : (data.filter(function(d){return d.Admin == "Man"})).length,
+                              "Woman": (data.filter(function(d){return d.Admin == "Woman"})).length,
+                              "Both" : (data.filter(function(d){return d.Admin == "Both"})).length,
+                              "None" : (data.filter(function(d){return d.Admin == "None"})).length})
+
+
+//Repairs
+       longArray.push({Task : "Repairing", "Man" : (data.filter(function(d){return d.Repairs == "Man"})).length,
+                                "Woman": (data.filter(function(d){return d.Repairs == "Woman"})).length,
+                                "Both" : (data.filter(function(d){return d.Repairs == "Both"})).length,
+                                "None" : (data.filter(function(d){return d.Repairs == "None"})).length})
+
+      //childcare
+       longArray.push({Task : "Childcare", "Man" : (data.filter(function(d){return d.Childcare == "Man"})).length,
+                                    "Woman": (data.filter(function(d){return d.Childcare == "Woman"})).length,
+                                    "Both" : (data.filter(function(d){return d.Childcare == "Both"})).length,
+                                    "None" : (data.filter(function(d){return d.Childcare == "None"})).length})
+
+    //Elderly_care
+       longArray.push({Task : "Elderly care", "Man" : (data.filter(function(d){return d.Elderly_care == "Man"})).length,
+                                      "Woman": (data.filter(function(d){return d.Elderly_care == "Woman"})).length,
+                                      "Both" : (data.filter(function(d){return d.Elderly_care == "Both"})).length,
+                                      "None" : (data.filter(function(d){return d.Elderly_care == "None"})).length})
+
+      //Other care
+         longArray.push({Task : "Other care", "Man" : (data.filter(function(d){return d.Other_care == "Man"})).length,
+                                      "Woman": (data.filter(function(d){return d.Other_care == "Woman"})).length,
+                                      "Both" : (data.filter(function(d){return d.Other_care == "Both"})).length,
+                                      "None" : (data.filter(function(d){return d.Other_care == "None"})).length})
+
+
+const listVoted = ["Man","Woman","Both","None"]
+
+
+const groups =["Cooking","Shopping","Clothes","Childcare","Elderly care","Other care","Admin","Repairing"]
+
+
+console.log("subgroups :", listVoted," and groups :", groups)
+
+// Add X axis
+  const x = d3.scaleLinear()
+      .domain([0, data.length])
+      .range([0, width])
+
+
+    // Add Y axis
+const y = d3.scaleBand()
+  .domain(groups)
+  .range([0, height ])
+  .padding([0.2])
+
+
+  const color = d3.scaleOrdinal()
+    .domain(listVoted)
+    .range(['#1c1f4c','#00848c',"#fec20f", "#c3c0b1"])
+
+
+  const stackedData = d3.stack()
+  .keys(listVoted)
+  (longArray)
+
+    console.log(groups)
+
+  function groupsHouseholdCategories(){
+    clearRect ()
+    svg.append("g")
+      .attr("transform", `translate(0, ${height})`)
+      .call(d3.axisBottom(x).tickSizeOuter(0)).attr("opacity",0.2);
+
+      const yAxis = svg.append("g").call(d3.axisLeft(y).tickSize(0));
+      yAxis.select('.domain').attr('opacity', 0)
+      yAxis.selectAll(".tick text")
+      .attr("font-size","14")
+      .attr("fill","grey")
+
+  svg.append("g")
+      .selectAll("g")
+      .data(stackedData)
+      .join("g")
+      .attr("fill", d => color(d.key))
+      .selectAll("rect")
+        .data(d => d)
+        .join("rect")
+        .transition()
+        .duration(750)
+      .attr("x", d => x(d[0]))
+      .attr("y", d => y(d.data.Task))
+      .attr("height",y.bandwidth())
+      .attr("width",d => x(d[1]) - x(d[0]))
+      .attr("opacity",0.2)
+
+  }
+
+  function groupsHouseholdCategoriesBoth(){
+      clearRect ()
+      svg.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+
+        const yAxis = svg.append("g").call(d3.axisLeft(y).tickSize(0));
+        yAxis.select('.domain').attr('opacity', 0)
+        yAxis.selectAll(".tick text")
+        .attr("font-size","14")
+        .attr("fill",function(d){
+          if (d == "Shopping" || d == "Clothes" || d == "Admin" || d == "Childcare" || d == "Elderly care" || d == "Other care"){return "black";}
+          else{return "grey"}
+        })
+
+      svg.append("g")
+          .selectAll("g")
+          .data(stackedData)
+          .join("g")
+          .attr("fill", d => color(d.key))
+          .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+          .attr("x", d => x(d[0]))
+          .attr("y", d => y(d.data.Task))
+          .attr("height",y.bandwidth())
+          .attr("width",d => x(d[1]) - x(d[0]))
+          .attr("opacity",function(d,i){
+            if(d.data.Task == "Shopping" || d.data.Task == "Clothes"|| d.data.Task == "Admin"  || d.data.Task == "Childcare" || d.data.Task == "Elderly care" || d.data.Task == "Other care"){return "1";}
+            else{return "0.1"}
+          })
+
+
+
+          /*legend*/
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#1c1f4c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#00848c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#fec20f")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#c3c0b1")
+
+          makeTitle("Man","1",130,550,'#1c1f4c',"16px")
+          makeTitle("Woman","1",330,550,'#00848c',"16px")
+          makeTitle("Both","1",130,595,'#fec20f',"16px")
+          makeTitle("Neither","1",330,595,'#c3c0b1',"16px")
+
+}
+
+  function groupsHouseholdCategoriesWomen(){
+      clearRect ()
+      svg.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+
+        const yAxis = svg.append("g").call(d3.axisLeft(y).tickSize(0));
+        yAxis.select('.domain').attr('opacity', 0)
+        yAxis.selectAll(".tick text")
+        .attr("font-size","14")
+        .attr("fill",function(d){
+          if (d == "Cooking" || d == "Shopping" || d == "Clothes" || d == "Childcare" || d == "Elderly care" || d == "Other care"){return "black";}
+          else{return "grey"}
+        })
+
+      svg.append("g")
+          .selectAll("g")
+          .data(stackedData)
+          .join("g")
+          .attr("fill", d => color(d.key))
+          .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+          .attr("x", d => x(d[0]))
+          .attr("y", d => y(d.data.Task))
+          .attr("height",y.bandwidth())
+          .attr("width",d => x(d[1]) - x(d[0]))
+          .attr("opacity",function(d,i){
+            if(d.data.Task == "Cooking" || d.data.Task == "Shopping" || d.data.Task == "Clothes" || d.data.Task == "Childcare" || d.data.Task == "Elderly care" || d.data.Task == "Other care"){return "1";}
+            else{return "0.2"}
+          })
+
+          /*legend*/
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#1c1f4c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#00848c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#fec20f")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#c3c0b1")
+
+          makeTitle("Man","1",130,550,'#1c1f4c',"16px")
+          makeTitle("Woman","1",330,550,'#00848c',"16px")
+          makeTitle("Both","1",130,595,'#fec20f',"16px")
+          makeTitle("Neither","1",330,595,'#c3c0b1',"16px")
+  }
+
+  function groupsHouseholdCategoriesMen(){
+      clearRect ()
+      svg.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+
+        const yAxis = svg.append("g").call(d3.axisLeft(y).tickSize(0));
+        yAxis.select('.domain').attr('opacity', 0)
+        yAxis.selectAll(".tick text")
+        .attr("font-size","14")
+        .attr("fill",function(d){
+          if (d == "Admin" || d == "Repairing"){return "black";}
+          else{return "grey"}
+        })
+
+      svg.append("g")
+          .selectAll("g")
+          .data(stackedData)
+          .join("g")
+          .attr("fill", d => color(d.key))
+          .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+          .attr("x", d => x(d[0]))
+          .attr("y", d => y(d.data.Task))
+          .attr("height",y.bandwidth())
+          .attr("width",d => x(d[1]) - x(d[0]))
+          .attr("opacity",function(d,i){
+            if(d.data.Task == "Admin" || d.data.Task == "Repairing"){return "1";}
+            else{return "0.2"}
+          })
+
+          /*legend*/
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#1c1f4c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#00848c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#fec20f")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#c3c0b1")
+
+          makeTitle("Man","1",130,550,'#1c1f4c',"16px")
+          makeTitle("Woman","1",330,550,'#00848c',"16px")
+          makeTitle("Both","1",130,595,'#fec20f',"16px")
+          makeTitle("Neither","1",330,595,'#c3c0b1',"16px")
+  }
+
+  function groupsHouseholdCategoriesAll(){
+      clearRect ()
+      svg.append("g")
+        .attr("transform", `translate(0, ${height})`)
+        .call(d3.axisBottom(x).tickSizeOuter(0));
+
+        const yAxis = svg.append("g").call(d3.axisLeft(y).tickSize(0));
+        yAxis.select('.domain').attr('opacity', 0)
+        yAxis.selectAll(".tick text")
+        .attr("font-size","14")
+        .attr("fill","black")
+
+      svg.append("g")
+          .selectAll("g")
+          .data(stackedData)
+          .join("g")
+          .attr("fill", d => color(d.key))
+          .selectAll("rect")
+            .data(d => d)
+            .join("rect")
+          .attr("x", d => x(d[0]))
+          .attr("y", d => y(d.data.Task))
+          .attr("height",y.bandwidth())
+          .attr("width",d => x(d[1]) - x(d[0]))
+          .attr("opacity",1)
+
+          /*legend*/
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#1c1f4c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",535)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#00848c")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",100)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#fec20f")
+
+          d3.select("svg")
+          .append("rect")
+          .data(legend)
+          .attr("x",300)
+          .attr("y",580)
+          .attr("width",20)
+          .attr("height",20)
+          .attr("fill","#c3c0b1")
+
+          makeTitle("Man","1",130,550,'#1c1f4c',"16px")
+          makeTitle("Woman","1",330,550,'#00848c',"16px")
+          makeTitle("Both","1",130,595,'#fec20f',"16px")
+          makeTitle("Neither","1",330,595,'#c3c0b1',"16px")
+  }
+
+
+  var women_men = data.filter(function(d){return d.Overall_chores == "Man" || d.Overall_chores =="Woman"})
+  var length_man = (data.filter(function(d){return d.Overall_chores == "Man"})).length
+
+
+     const callbacks = [
+       moveTotal,
+       moveGender,
+       groupsHousehold,
+       groupsHouseholdGender,
+       singleHousehold,
+       couples,
+       allHousehold,
+       groupsHouseholdCategories,
+       groupsHouseholdCategoriesBoth,
+       groupsHouseholdCategoriesWomen,
+       groupsHouseholdCategoriesMen,
+       groupsHouseholdCategoriesAll
+     ]
+
+     const steps = d3.selectAll(".step");
+
+     const scroller = scrollama();
+
+     scroller
+     .setup({
+       step : ".step",
+     })
+     .onStepEnter((response) =>{
+       callbacks[response.index]();
+       steps.style("opacity", 0.1);
+       d3.select(response.element).style("opacity",1);
+       console.log("enter",response);
+     })
+     .onStepExit((response) =>{
+      // clearRect();
+       console.log("exit",response);
+     });
+
+     window.addEventListener("scroll", function (e){
+       console.log(window.scrollY);
+     })
+          }) ;
+
+    //})
+
+  </script>
+</body>
+
+</html>

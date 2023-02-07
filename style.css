@@ -133,7 +133,7 @@ color : #35586C;
 }
 
 #bio h1{
-  font-weight:normal;,qs
+  font-weight:normal;
 }
 
 #bio p{
@@ -223,6 +223,7 @@ float: left;
 #article{
   width: 100%;
   float: left;
+
 }
 
 #text-title img{
@@ -239,6 +240,13 @@ float: left;
   width: 80%;
   margin-left: 10%;
   float: left;
+}
+
+#text-scrolly{
+  width: 80%;
+  margin-left: 10%;
+  float: left;
+  margin-top: 50px;
 }
 
 
@@ -305,6 +313,19 @@ float: left;
 
 #text img{
   width: 100%;
+}
+
+/*font for scrollytelling*/
+#text-scrolly p{
+  font-family: 'Merriweather';
+  text-align: left;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#text-scrolly a{
+  color: black;
+  text-decoration: underline;
 }
 /*iframe{
   min-width: 700px;
@@ -375,6 +396,12 @@ float: left;
   }
 
   #text{
+    width: 100%;
+    padding-left: 0px;
+    margin-left: 0%;
+  }
+
+  #text-scrolly{
     width: 100%;
     padding-left: 0px;
     margin-left: 0%;
