@@ -195,3 +195,33 @@ font-size: 22px;
     font-weight: 100;
     color: white;
 }
+
+
+/*MAP TREE*/
+
+#map_trees{
+  outline-style: solid;
+  padding: 3px;
+}
+
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; /*aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+  }
+
+  .svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
+
+  svg .rect {
+    fill: white;
+    stroke: steelblue;
+    stroke-width: 5px;
+  }
