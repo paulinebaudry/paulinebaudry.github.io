@@ -1,568 +1,197 @@
-
 body{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  margin:0;
-  margin-right: 0px;
-  padding: 0px;
-  width: 100%;
-  display: inline-block;
-/*font-family: 'Trebuchet MS', sans-serif;*/
+  background-color: #F0EAD6 !important;
 }
 
-/*TOP*/
+/* HEADER */
 
-#top{
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  padding-top: 60px;
-  margin-left: 3%;
-  margin-right: 3%;
-  width: 94%;
-  float:left;
-  display: inline-block;
-/*  background-color: #1a2b36;
-  border-bottom-style:solid;
-  border-bottom-color: #35586C	;
-  border-bottom-width: 5px;*/
-}
-
-#title{
-  float: left;
-  width: 70%;
-  min-width: 500px;
-  font-size: 24px;
-  font-weight: 1000;
-}
-
+/*All pages*/
 #title h1{
-  font-size: 50px;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-}
-
-#title a{
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-weight: 1000;
-}
-
-#menu{
-  float: right;
-  padding-top: 0px;
-  min-width: 200px;
-  padding-top: 40px;
-  padding-bottom: 15px;
-}
-
-
-#title a:hover{
-color : #35586C;
-}
-
-.dropbtn{
-  background-color: #35586C;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  float: right;
-  margin-left: 3%;
-}
-
-
-.dropdown a:clicked{
-  color: white;
-  background-color: #35586C;
-}
-
-.dropdown-content {
-  display: none;
+  font-size: 42px;
+  font-weight: 700;
+  padding-left: 10px;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
+  bottom:0;
 }
 
-.dropdown-content a {
-  color: black;
-  min-width: 100px;
-  width: 100px;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+#menu h3{
+    font-size: 22px;
+    font-weight: 600;
+    padding-left: 10px;
+    position: absolute;
+    bottom   : 0;
 }
 
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
 
 
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+/*About page*/
+#header{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #57551d;
+  height:100px;
+  position: relative;
+  color: white;
 }
 
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
-  background-color: #2f4d5f;
+#header a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Work pages*/
+#header-general{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  margin-left: 10%;
+  margin-right: 10%;
+  height:100px;
+  position: relative;
+  color: #57551d;
+}
+
+#header-general a{
+    color: black;
+    text-decoration: none;
+}
+
+/*Responsive layout*/
+@media screen and (max-width: 800px) {
+  #title h1{
+    position: relative;
+  }
+  #menu h3{
+    position: relative;
+  }
+  #header{
+    margin: 0%;
+  }
 }
 
 
 /*MIDDLE*/
 
+/*All pages*/
 #middle{
-  width: 100%;
-  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  margin-top: 8%;
 }
 
-#bio{
-  width: 40%;
-  float: left;
-  max-width: 700px;
-  padding-left: 10%;
-}
-
-#bio h1{
-  font-weight:normal;
-}
-
-#bio p{
-  font-size: 18px;
-  text-align: justify;
-}
-
-#photo{
-  float: left;
-  padding-left: 100px;
-  padding-top: 20px;
+/*About page*/
+#photo-background{
+  background-color: white;
+  border: 1.5px solid black;
+  min-width: 400px;
 }
 
 #photo img{
-  min-width: 300px;
-  max-height: 500px;
+  min-width: 400px;
   max-width: 100%;
-}
-
-
-
-/*BOTTOM*/
-
-#bottom{
-float: left;
-  margin: auto;
-  margin-left: 45%;
-}
-
-
-.link-icon{
-  float: left;
-  padding: 10px;
-
-}
-
-.link-icon img{
-  width: 30px;
-}
-
-
-
-
-/*BLOG*/
-
-
-.blog-card{
-  width: 32%;
-  min-width: 300px;
-  float: left;
-  padding: 7px;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 20%;
+  padding-right: 10%;
   position: relative;
 }
 
-.blog-card a{
+#bio{
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-bottom: 8%;
+}
+
+#bio p{
+  padding-left: 50px;
+}
+
+/*General work page*/
+#middle-work{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  margin-top: 8%;
+}
+
+#middle-work a{
   text-decoration: none;
   color: black;
 }
 
-.blog-photo {
-  width: 100%;
+
+/*Cards img have to be 800x600*/
+.card{
+    border: 1.5px solid black !important;
+    border-radius: 0px !important;
+    margin-bottom: 20px !important;
 }
 
-.img_description{
-  position: absolute;
-  visibility: hidden;
-  text-align: center;
-  vertical-align: middle;
-  width:90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.blog-card:hover .img_description {
-  visibility: visible;
-  opacity: 1;
-}
-
-.blog-card:hover .blog-photo {
-  opacity: 0.5;
-}
-
-
-
-#article{
-  width: 100%;
-  float: left;
-
-}
-
-#text-title img{
-  width: 100%;
-}
-
-#text-title {
-  width: 80%;
-  margin-left: 10%;
-  float: left;
-}
-
-#text{
-  width: 80%;
-  margin-left: 10%;
-  float: left;
-}
-
-#text-scrolly{
-  width: 80%;
-  margin-left: 10%;
-  float: left;
-  margin-top: 50px;
-}
-
-
-
-#text-title h1{
-  text-align: center;
-  font-family: 'Merriweather';
-  font-size: 34px;
-  font-weight: 100;
-  line-height: 1.5;
-}
-
-#text-title h2{
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 24px;
-  line-height: 1.5;
-}
-
-#text h1{
-  text-align: left;
-  font-family: 'Merriweather';
-
-}
-
-#text h2{
-  text-align: center;
-  font-family: 'Roboto';
-
-}
-
-
-#text-title h3{
-  text-align: center;
-  font-family: 'Roboto';
-  font-size: 20px;
-  font-weight: 100;
-  line-height: 1.5;
-}
-
-#text-title a{
-  color:grey;
+.card-text{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
   font-size: 18px;
-  text-decoration: underline;
-}
-
-#text a{
-  color: black;
-  text-decoration: underline;
-}
-
-#text p{
-  font-family: 'Merriweather';
-  text-align: justify;
-  font-size: 20px;
-  font-weight: 200;
-  letter-spacing: 1px;
-}
-
-#text ul{
-  font-family: 'Merriweather';
-  font-size: 20px;
-}
-
-#text img{
-  width: 100%;
-}
-
-/*font for scrollytelling*/
-#text-scrolly p{
-  font-family: 'Merriweather';
-  text-align: left;
-  font-size: 16px;
-  letter-spacing: 1px;
-}
-
-#text-scrolly a{
-  color: black;
-  text-decoration: underline;
-}
-/*iframe{
-  min-width: 700px;
-}*/
-
-
-  /*Responsive layout*/
-  @media screen and (max-width: 1000px) {
-    .blog-card {
-      width: 100%;
-    }
-
-    #top{
-        padding-top: 60px;
-        padding-left: 1%;
-        padding-right: 1%;
-        margin-left: 0%;
-        margin-right: 0%;
-        width: 100%;
-        float:left;
-        display: inline-block;
-      }
-
-    #middle{
-    padding: 1%;
-    float: left;
-    width: 100%;
-  }
-
-  #bottom{
-  float: left;
-    margin: auto;
-    padding-left: 35%;
-  }
-
-  #menu {
-    padding-top: 0px;
-    padding-left: 0px;
-    float: left;
-  }
-
-  #menu a{
-      float: left;
-  }
-
-
-
-
-  #photo{
-    float: left;
-    width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #bio{
-    width: 100%;
-    float: left;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-
-  #text-title {
-    width: 100%;
-    padding-left: 0px;
-    margin-left: 0%;
-  }
-
-  #text{
-    width: 100%;
-    padding-left: 0px;
-    margin-left: 0%;
-  }
-
-  #text-scrolly{
-    width: 100%;
-    padding-left: 0px;
-    margin-left: 0%;
-  }
-
-  .img_description{
-    position: absolute;
-    visibility: visible;
-    text-align: center;
-    vertical-align: middle;
-    width:90%;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-  }
-
-  .img_description h5{
-    visibility: hidden;
-  }
-
-
-  iframe{
-    width: 500px;
-    float: left;
-  }
-
-.dropdown {
-  float: left;
-}
-
-
-}
-/*MAP TREE*/
-
-#map_trees{
-  outline-style: solid;
-  padding: 3px;
-}
-
-  .svg-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    padding-bottom: 60%; /*aspect ratio */
-    vertical-align: top;
-    overflow: hidden;
-  }
-
-  .svg-content-responsive {
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: 0;
-  }
-
-  svg .rect {
-    fill: white;
-    stroke: steelblue;
-    stroke-width: 5px;
-  }
-
-/*TOOLTIP for FRANCOPHONE RAP BATTLE*/
-  .d3-tip {
-        line-height: 1;
-        padding: 6px;
-        background: rgba(0, 0, 0, 0.8);
-        color: #fff;
-        border-radius: 4px;
-        font-size: 12px;
-        font-family: "Roboto";
-      }
-
-
-  /*TIDY TUESDAYS*/
-
-.tt-intro{
-    margin-left : 10%;
-    margin-right : 10%;
-    text-align: center;
-}
-
-.tt-intro a{
-  color : black;
-  font-weight: bold;
-}
-
-.tt-entry{
-  margin-left : 20%;
-  margin-bottom : 10%;
-  width: 60%;
-  float: left;
-}
-
-.tt-entry-lng{
-  margin-left : 28%;
-  margin-bottom : 10%;
-  width: 44%;
-  float: left;
-}
-
-.tt-text{
-  width: 100%;
-  vertical-align: bottom;
-  display: inline-block;
-  line-height: 0.8;
   text-align: center;
-  font-weight:100;
 }
 
-.tt-text p{
+
+/*Article page*/
+.container-fluid-article{
+  margin: 8%;
+}
+
+#content-box{
+  background-color: white;
+  border: 1.5px solid black;
+  padding: 20px;
+
+}
+
+#data-viz img{
+  width: 100%;
+  padding: 10px;
+}
+
+#data-viz-text h6{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    margin: 10px;
+}
+
+
+#content-box p{
+font-family: 'Baskerville';
+font-size: 22px;
   font-weight: 100;
 }
 
-.tt-text h5{
-  font-weight:100;
+#content-box a{
+  color: black;
 }
 
-.tt-text h2{
-  font-family: 'Roboto';
-  line-height: 0.2;
+#title-intro{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
-
-.tt-text a{
-color: black;
-}
-
-.tt-img{
-  width: 100%;;
-  border-style: solid;
-  border-width: 0.2px;
-  border-color: grey;
-  vertical-align: bottom;
-  display: inline-block;
-}
-
 
 /*Responsive layout*/
 @media screen and (max-width: 800px) {
-  .tt-text{
-    width: 100%;
-    padding-left: 0%;
+  .container-fluid-article{
+    margin: 2%;
   }
+}
 
-  .tt-entry{
-    width: 100%;
-    padding-left: 0%;
-    margin-left : 0%;
-    margin-bottom : 3%;
-  }
+/*FOOTER*/
+#footer-links{
+  background-color: #57551d;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
 
-  .tt-entry-lng{
-    margin-left : 10%;
-    margin-bottom : 10%;
-    width: 80%;
-    float: left;
-  }
-
-  .tt-img{
-    float : left;
-    width : 100%;
-  }
+#footer-links a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: white;
 }
