@@ -154,10 +154,17 @@ body{
   padding: 10px;
 }
 
+#data-viz-text{
+  margin: 10px;
+}
 #data-viz-text h6{
   font-family: 'Poppins', sans-serif;
     font-weight: 100;
-    margin: 10px;
+}
+
+#data-viz-text h7{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 80;
 }
 
 
